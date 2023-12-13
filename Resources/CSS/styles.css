@@ -1,0 +1,127 @@
+/* Not to forget this stage. I need to practice everything that I've already learnt
+@font-face {
+    font-family: ;
+    src: url();
+}
+*/
+
+body {
+    background-color: bisque;
+    font-size: large;
+}
+
+main {
+    width: 80%;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    background-color: snow;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul.circle {
+    list-style-type:circle;
+}
+
+.indentation {
+    width: 930px;
+    padding: 15px;
+}
+.inline-block {
+    display: inline-block;
+}
+.left {
+    position: relative;
+    left: 20px;
+}
+.img {
+    vertical-align: middle;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 100px;
+}
+.narrow-img {
+    vertical-align: middle;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+}
+div.banner {
+    background-image: url(../Images/Banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    text-align: center;
+    top: 0px;
+}
+
+
+div.banner h1 {
+    position: relative;
+    top: 98px;
+    font-size: 70px;
+    color: #6f3c3c;
+    border: 2px solid #d19250;
+    border-radius: 181px;
+    width: 600px;
+    right: 0px;
+    left: 654px;
+    background-color: hsl(32.54deg 100% 77.53% / 56%);
+}
+
+div.banner p {
+    position: relative;
+    top: 165px;
+    font-size: 21px;
+    font-weight: 500;
+    opacity: 0.9;
+    color: maroon;
+    text-decoration-color: hsl(0deg 0% 0% / 77%);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+nav.list ul {
+    background-color: hsl(34deg 77% 56% / 43%);
+}
+
+nav.list li {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 15px;
+}
+
+nav.list a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #000000;
+}
+
+nav.list a.menu {
+    position: relative;
+    color: saddlebrown;
+    left: 1560px;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+
+
+#text-align {
+    position: relative;
+    top: 189px;
+}
+
+#logo-align {
+    left: 1035px;
+    top: 2px;
+}
