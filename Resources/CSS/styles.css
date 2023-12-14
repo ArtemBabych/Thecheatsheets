@@ -16,48 +16,34 @@ main {
     left: 200px;
     top: 200px;
     background-color: snow;
+    border-radius: 6px;
+    border: 2px solid hsl(0deg 30% 32% / 80%);
+    padding: 20px;
+    line-height: 20px;
+    word-spacing: 1px;
 }
+
 footer {
     width: 80%;
     position: relative;
     left: 200px;
-    top: 220px;
+    top: 250px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
 }
+
+span.footer {
+    font-size: 14px;
+}
+
 ol {
     list-style: decimal;
 }
 
 ul.circle {
-    list-style-type:circle;
+    list-style-type: circle;
 }
 
-.indentation {
-    width: 930px;
-    padding: 15px;
-}
-.inline-block {
-    display: inline-block;
-}
-.left {
-    position: relative;
-    left: 20px;
-}
-.img {
-    vertical-align: middle;
-    width: 400px;
-    height: 300px;
-    position: relative;
-    left: 100px;
-}
-.narrow-img {
-    vertical-align: middle;
-    width: 400px;
-    height: 100px;
-    position: relative;
-    left: 100px;
-}
 div.banner {
     background-image: url(../Images/Banner.jpg);
     background-repeat: no-repeat;
@@ -86,7 +72,7 @@ div.banner h1 {
 div.banner p {
     position: relative;
     top: 165px;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: 500;
     opacity: 0.9;
     color: maroon;
@@ -121,7 +107,48 @@ nav.list a.menu {
     text-shadow: none;
 }
 
+.lobster2font {
+    font-family: 'Lobster Two', sans-serif;
+}
 
+.mansalvafont {
+    font-family: 'Mansalva', sans-serif;
+}
+.lora {
+    font-family: 'Lora', serif;
+}
+.afacad {
+    font-family: 'Afacad', sans-serif;
+}
+.indentation {
+    width: 930px;
+    padding: 15px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.left {
+    position: relative;
+    left: 20px;
+}
+
+.img {
+    vertical-align: middle;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 100px;
+}
+
+.narrow-img {
+    vertical-align: middle;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+}
 
 #text-align {
     position: relative;
