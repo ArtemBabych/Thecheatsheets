@@ -17,7 +17,14 @@ main {
     top: 200px;
     background-color: snow;
 }
-
+footer {
+    width: 80%;
+    position: relative;
+    left: 200px;
+    top: 220px;
+    text-align: center;
+    font-size: 15px;
+}
 ol {
     list-style: decimal;
 }
