@@ -14,13 +14,14 @@ main {
     width: 80%;
     position: relative;
     left: 200px;
-    top: 200px;
+    top: 195px;
     background-color: snow;
     border-radius: 6px;
     border: 2px solid hsl(0deg 30% 32% / 80%);
     padding: 20px;
-    line-height: 20px;
+    line-height: 21px;
     word-spacing: 1px;
+    font-size: 18px;
 }
 
 footer {
@@ -38,6 +39,11 @@ span.footer {
 
 ol {
     list-style: decimal;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 ul.circle {
@@ -102,9 +108,18 @@ nav.list a {
 nav.list a.menu {
     position: relative;
     color: saddlebrown;
-    left: 1560px;
+    left: 1570px;
     font-size: 20px;
     text-shadow: none;
+}
+
+nav.list a.menu:hover {
+    color: #ffffff;
+}
+
+main a:hover {
+    text-decoration: underline;
+    text-decoration-color: #000000;
 }
 
 .lobster2font {
