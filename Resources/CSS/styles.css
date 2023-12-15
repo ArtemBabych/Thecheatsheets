@@ -13,7 +13,6 @@ body {
 main {
     width: 80%;
     position: relative;
-    left: 200px;
     top: 195px;
     background-color: snow;
     border-radius: 6px;
@@ -22,19 +21,16 @@ main {
     line-height: 21px;
     word-spacing: 1px;
     font-size: 18px;
+    margin: 0 auto;
 }
 
 footer {
     width: 80%;
     position: relative;
-    left: 200px;
     top: 250px;
     text-align: center;
     font-size: 16px;
-}
-
-span.footer {
-    font-size: 14px;
+    margin: 0 auto;
 }
 
 ol {
@@ -44,6 +40,10 @@ ol {
 a {
     text-decoration: none;
     color: #000000;
+}
+
+span.footer {
+    font-size: 14px;
 }
 
 ul.circle {
@@ -70,9 +70,8 @@ div.banner h1 {
     border: 2px solid #d19250;
     border-radius: 181px;
     width: 600px;
-    right: 0px;
-    left: 654px;
     background-color: hsl(32.54deg 100% 77.53% / 56%);
+    margin: 0 auto;
 }
 
 div.banner p {
@@ -86,6 +85,7 @@ div.banner p {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 3px;
+    margin: 0 auto;
 }
 
 nav.list ul {
@@ -107,7 +107,7 @@ nav.list a {
 
 nav.list a.menu {
     position: relative;
-    color: saddlebrown;
+    color: #6f3c3c;
     left: 1570px;
     font-size: 20px;
     text-shadow: none;
@@ -135,9 +135,12 @@ main a:hover {
 .afacad {
     font-family: 'Afacad', sans-serif;
 }
+
 .indentation {
-    width: 930px;
-    padding: 15px;
+    position: relative;
+    left: 200px;
+    padding-left: 0px;
+    width: 400px;
 }
 
 .inline-block {
@@ -150,19 +153,46 @@ main a:hover {
 }
 
 .img {
-    vertical-align: middle;
-    width: 400px;
-    height: 300px;
+    width: 430px;
+    height: 330px;
     position: relative;
-    left: 100px;
+    /* bottom: 69px; */
+    border-radius: 3px;
+    vertical-align: bottom;
+    padding-left: 100px;
 }
 
 .narrow-img {
-    vertical-align: middle;
-    width: 400px;
-    height: 100px;
+    vertical-align: top;
+    width: 430px;
+    height: 130px;
     position: relative;
-    left: 100px;
+    border-radius: 3px;
+    padding-left: 100px;
+}
+
+.headings {
+ text-align: center;
+ font-size: 35px;
+ position: relative;
+ right: 20px;
+ padding: 180px;
+}
+
+.infsection {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.infheadings {
+    font-size: 25px;
+    width: 1000px;
+}
+
+.infp {
+    width: 400px;
+    height: 300px;
+    font-size: 20px;
 }
 
 #text-align {
@@ -173,4 +203,14 @@ main a:hover {
 #logo-align {
     left: 1035px;
     top: 2px;
+}
+
+#html {
+    position: relative;
+    text-align: center;
+    right: 20px;
+    font-size: 45px;
+    padding: 110px;
+    color: bisque;
+    text-shadow: 2px 2px 2px #715151;
 }
