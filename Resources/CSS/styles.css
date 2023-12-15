@@ -42,6 +42,15 @@ a {
     color: #000000;
 }
 
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: hsl(24deg 84.49% 80.64%);
+    padding: 5px;
+}
+th {
+    background-color: hsl(24deg 90.68% 76.24%);
+}
 span.footer {
     font-size: 14px;
 }
@@ -122,6 +131,16 @@ main a:hover {
     text-decoration-color: #000000;
 }
 
+section.stylet p, ol, ul {
+    font-size: 20px;
+}
+
+ul.specindent, ol.specindent {
+    position: relative;
+    top: 4px;
+    left: 47px;
+}
+
 .lobster2font {
     font-family: 'Lobster Two', sans-serif;
 }
@@ -176,7 +195,7 @@ main a:hover {
  font-size: 35px;
  position: relative;
  right: 20px;
- padding: 100px 10px 180px 10px;
+ padding: 100px 10px;
 }
 
 .infsection {
