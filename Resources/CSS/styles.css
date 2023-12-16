@@ -234,6 +234,17 @@ ol.specindent {
 .th {
     font-size: 20px;
 }
+
+.title {
+    position: relative;
+    text-align: center;
+    right: 20px;
+    font-size: 45px;
+    padding: 110px;
+    color: bisque;
+    text-shadow: 2px 2px 2px #715151;
+}
+
 #text-align {
     position: relative;
     top: 189px;
@@ -242,16 +253,6 @@ ol.specindent {
 #logo-align {
     left: 1035px;
     top: 2px;
-}
-
-#html {
-    position: relative;
-    text-align: center;
-    right: 20px;
-    font-size: 45px;
-    padding: 110px;
-    color: bisque;
-    text-shadow: 2px 2px 2px #715151;
 }
 
 #back {

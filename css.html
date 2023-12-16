@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=Lora:wght@400;700&family=Mansalva&family=Space+Mono&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="./Resources/CSS/Reset-CSS.css">
         <link rel="stylesheet" href="./Resources/CSS/styles.css" type="text/css">
         <title>The cheat sheets</title>
     </head>
+
     <body>
         <header>
             <section class="top">
                 <nav class="list">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index">Home</a></li>
                         <li><a href="./html">HTML</a></li>
-                        <li><a href="./css.html">CSS</a></li>
-                        <li><a class="menu" href>Menu</a></li>
+                        <li><a href="./css">CSS</a></li>
+                        <li><a class="menu" href="./menu" id="menu">Menu</a></li>
                     </ul>
                 </nav>
                 <div class="banner afacad">
@@ -23,511 +30,685 @@
                 </div>
             </section>
         </header>
-        <main>
+        <main class="afacad">
             <section>
+                <h2 id="css" class="title">CSS</h2>
                 <article class="Greetings">
-                    <p> <h2 class="inline-block">Welcome</h2> to Thecheatsheets
-                        – Your Swift Path to HTML
-                        and CSS Mastery!</p>
-
-                    <p>Greetings, fellow coding enthusiasts and learners
-                        seeking the fast track to HTML and CSS brilliance! 🚀</p>
-
-                    <p>Step into the world of web development with
-                        Thecheatsheets, your go-to hub for quick and effective
-                        HTML and CSS cheat sheets. Whether you're a beginner
-                        eager to grasp the essentials or a coding maestro
-                        looking for a handy reference, you're in the right
-                        place.</p>
-
-                    <p>What Sets Us Apart:</p>
-                    <ul>
-                        <li>📚 Cheat Sheets at Your Fingertips: Dive into our
-                            carefully crafted cheat sheets, offering concise and
-                            practical insights into HTML and CSS concepts.
-                            Perfect
-                            for quick reviews, last-minute recalls, or simply
-                            keeping your coding skills sharp.</li>
-                        <li>🚀 Accelerated Learning: Our goal is to streamline
-                            your
-                            learning process. Skip the lengthy tutorials and get
-                            straight to the point with cheat sheets designed to
-                            boost your understanding and efficiency.</li>
-                        <li>
-                            🧠 Tailored for Speed: No need to sift through dense
-                            documentation. Our cheat sheets are organized for
-                            swift
-                            navigation, ensuring you find the information you
-                            need
-                            without unnecessary detours.</li>
-                        <li>🌐 Stay Updated: The web development landscape
-                            evolves,
-                            and so do we. Stay in the loop with the latest HTML
-                            and
-                            CSS features, best practices, and time-saving tips.</li>
-                    </ul>
-                    <p>Why Choose Thecheatsheets:</p>
-                    <ol class="left">
-                        <li> Practical and Pragmatic: We prioritize
-                            practicality.
-                            Our cheat sheets focus on what you need to know,
-                            presented in a user-friendly format for quick
-                            absorption. ✨</li>
-                        <li>Community Connection: Join a community of learners
-                            passionate about mastering HTML and CSS. Share
-                            insights,
-                            ask questions, and explore the coding journey
-                            together.🤝 </li>
-                        <li> Discover More: While our main focus is cheat
-                            sheets,
-                            explore additional resources, insights, and articles
-                            to
-                            enhance your overall understanding of web
-                            development.💡</li>
-                        <li> Ready to enhance your HTML and CSS skills? Start
-                            browsing our cheat sheets now and elevate your
-                            coding
-                            game!</li>
-                    </ol>
-                    <p>🖥️Happy coding!✨✨ </p>
-                    <p>Your Thecheatsheets.</p>
+                    <p> Greetings to the next chapter of our journey into the
+                        world of web development! In this installment, we delve
+                        into the magic of Cascading Style Sheets (CSS), a
+                        fundamental technology that transforms the aesthetics
+                        and layout of our web pages.</p>
+                    <br>
+                    <p>CSS serves as the stylistic backbone of the web,
+                        enabling us to breathe life and personality into the
+                        structural elements laid out by HTML. From color schemes
+                        to responsive layouts, CSS empowers developers to craft
+                        visually stunning and user-friendly interfaces.</p>
+                    <br>
+                    <p>In this section, we will unravel the mysteries of CSS,
+                        exploring its syntax, selectors, properties, and the
+                        principles of the cascade and specificity. Get ready to
+                        elevate your web design skills as we embark on a
+                        thrilling adventure through the intricacies of styling
+                        and layout. Whether you're a beginner looking to grasp
+                        the basics or a seasoned developer aiming to refine your
+                        skills, there's something for everyone in the enchanting
+                        realm of CSS.</p>
+                    <br>
+                    <p>So, fasten your seatbelts, and let's embark on this
+                        exciting journey of transforming raw HTML structures
+                        into visually captivating and engaging web experiences!
+                        Dive into the wonders of CSS and watch as your web pages
+                        come to life with style and sophistication. Let's turn
+                        your vision into a pixel-perfect reality!</p>
+                    <br>
+                    <p>Happy coding
+                        and good
+                        luck!🖥️✨
+                    </p>
+                    <br>
                 </article>
                 <section>
-                    <h2 id="css">CSS</h2>
-                    <section>
-                        <h3>Elements and Structure</h3>
-                        <section>
-                            <h4>Anchor Element</h4>
-                            <p class="inline-block indentation"> The &lt;a&gt;
-                                anchor element is used to create
-                                hyperlinks in an HTML document. The
-                                hyperlinks can point to other webpages,
-                                files on the same server, a location on the
-                                same page, or any other URL via the
-                                hyperlink reference attribute, href. The
-                                href determines the location the anchor
-                                element points to.</p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Anchor-element.jpg"
-                                alt="The metaphora of the anchor element">
-                        </section>
-                        <section>
-                            <h4>Head Element</h4>
-                            <p class="inline-block indentation"> The
-                                &lt;head&gt;
-                                element contains general information
-                                about an HTML page that isn't displayed on
-                                the page itself. This information is called
-                                metadata and includes things like the title
-                                of the HTML document and links to
-                                stylesheets. </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/head-element.jpg"
-                                alt="The metaphora of the head element">
-                        </section>
-                        <section>
-                            <h4>Target
-                                Attribute</h4>
-                            <p class="inline-block indentation"> The
-                                &lt;target&gt;
-                                attribute on an &lt;a&gt; anchor element
-                                specifies where a hyperlink should be
-                                opened. A target value of "_blank" will tell
-                                the browser to open the hyperlink in a new
-                                tab in modern browsers, or in a new window
-                                in older browsers or if the browser has had
-                                settings changed to open hyperlinks in a new
-                                window.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/target.jpg"
-                                alt="The example of the target element">
-                        </section>
-                        <section>
-                            <h4>Indentation</h4>
-                            <p class="inline-block indentation">HTML code
-                                should be formatted such that the
-                                indentation level of text increases once for
-                                each level of nesting.
-
-                                It is a common convention to use two or four
-                                space per level of nesting.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Indentation.jpg"
-                                alt="The image of the space bar">
-                        </section>
-
-                        <section>
-                            <h4>Link to a Different Part of the Page #</h4>
-                            <p class="inline-block indentation"> The anchor
-                                element &lt;a&gt; can create hyperlinks
-                                to different parts of the same HTML
-                                document using the href attribute to
-                                point to the desired location with #
-                                followed by the id of the element to
-                                link to.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/linking.jpg"
-                                alt="The example of using the id element">
-                        </section>
-
-                        <section>
-                            <h4>HTML Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;html&gt; element, the root of an HTML
-                                document, should be added after the !DOCTYPE
-                                declaration. All content/structure for an
-                                HTML document should be contained between
-                                the opening and closing &lt;html&gt; tags.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/HTML.jpg"
-                                alt="The example of the HTML element">
-                        </section>
-                        <section>
-                            <h4>Comments</h4>
-                            <p class="inline-block indentation">
-                                In HTML, comments can be added between
-                                an opening &lt;!-- and closing --&gt;. Content
-                                inside
-                                of comments will not be rendered by browsers,
-                                and are usually used to describe a part of code
-                                or provide other details.
-
-                                Comments can span single or multiple lines.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Comment.jpg"
-                                alt="The example of using comments in HTML">
-                        </section>
-                        <section>
-                            <h4>Whitespace</h4>
-                            <p class="inline-block indentation">
-                                Whitespace, such as line breaks, added
-                                to an HTML document between block-level elements
-                                will generally be ignored by the browser and are
-                                not added to increase spacing on the rendered
-                                HTML page. Rather, whitespace is added for
-                                organization and easier reading of the HTML
-                                document itself.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Whitespace.jpg"
-                                alt="The picture that display a whitespace">
-                        </section>
-                        <section>
-                            <h4>Title Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;title&gt; element contains a text
-                                that defines the title of an HTML document.
-                                The title is displayed in the browser’s
-                                title bar or tab in which the HTML page is
-                                displayed. The &lt;title&gt; element can only be
-                                contained inside a document’s &lt;head&gt;.
-                                element.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Title-example.jpg"
-                                alt="The example of the title element">
-                        </section>
-                        <section>
-                            <h4>File Path</h4>
-                            <p class="inline-block indentation">
-                                URL paths in HTML can be absolute
-                                paths, like a full URL, for example:
-                                https://developer.mozilla.org/en-US/docs/Learn
-                                or a relative file path that links to a local
-                                file in the same folder or on the same server,
-                                for example: ./style.css. Relative file paths
-                                begin with ./ followed by a path to the local
-                                file. ./ tells the browser to look for the file
-                                path from the current folder.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/File-path-image.jpg"
-                                alt="The image of the file path">
-                        </section>
-                        <section>
-                            <h4>Document Type Declaration</h4>
-                            <p class="inline-block indentation" id="text-align">
-                                The document type declaration
-                                &lt;!DOCTYPE html&gt; is required as the first
-                                line of
-                                an HTML document. The doctype declaration is an
-                                instruction to the browser about what type of
-                                document to expect and which version of HTML is
-                                being used, in this case it's HTML5.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/Doctype-example.jpg"
-                                alt="The example of the doctype declaration">
-                            <img class="img inline-block" id="logo-align"
-                                src="./Resources/Images/Doctype.jpg"
-                                alt="The image of the HTML">
-                        </section>
-                        <section>
-                            <h4>Element Content</h4>
-                            <p class="inline-block indentation">
-                                The content of an HTML element is the
-                                information between the opening and closing tags
-                                of an element.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/Your-content.jpg"
-                                alt="The example of the content part of HTML">
-                        </section>
-                        <section>
-                            <h4>List Item Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;li&gt; list item element create list
-                                items inside:
-
-                                Ordered lists &lt;ol&gt;
-                                Unordered lists &lt;ul&gt;
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/ULandOL.jpg"
-                                alt="The example of the ul, ol, and li elements">
-                        </section>
-                        <section>
-                            <h4>Video Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;video&gt; element embeds a media
-                                player for video playback. The src attribute
-                                will contain the URL to the video. Adding
-                                the controls attribute will display video
-                                controls in the media player.
-
-                                Note: The content inside the opening and
-                                closing tag is shown as a fallback in
-                                browsers that don't support the element.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Video-element.jpg"
-                                alt="The example of the video element">
-                        </section>
-                        <section>
-                            <h4>Emphasis Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;em&gt; element emphasizes text and
-                                browsers will usually italicize the
-                                emphasized text by default.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Italic.jpg"
-                                alt="The image of the several letters in italic">
-                        </section>
-                        <section>
-                            <h4>Div Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;div&gt; element is used as a
-                                container that divides an HTML document into
-                                sections and is short for “division”.
-                                &lt;div&gt;
-                                elements can contain flow content such
-                                as headings, paragraphs, links, images,
-                                etc.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/Div.jpg"
-                                alt="The example of the div element">
-                        </section>
-                        <section>
-                            <h4>HTML Structure</h4>
-                            <p class="inline-block indentation">
-                                HTML is organized into a family tree structure.
-                                HTML elements can have parents, grandparents,
-                                siblings, children, grandchildren, etc.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Family-structure.jpg"
-                                alt="The example of the family structure tree in HTML">
-                        </section>
-                        <section>
-                            <h4>Attribute Name and Values</h4>
-                            <p class="inline-block indentation">
-                                HTML attributes consist of a name and a value
-                                using the following syntax: name="value" and can
-                                be added to the opening tag of an HTML element
-                                to configure or change the behavior of the
-                                element.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/Attribute-and-value.jpg"
-                                alt="The example of the attribute and its value in HTML">
-                        </section>
-                        <section>
-                            <h4>Line Break Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;br&gt; line break element will create
-                                a line break in text and is especially useful
-                                where a division of text is required, like in a
-                                postal address. The line break element requires
-                                only an opening tag and must not have a closing
-                                tag.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/line-break.jpg"
-                                alt="The photo of the enter button">
-                        </section>
-                        <section>
-                            <h4>Image Element</h4>
-                            <p class="inline-block indentation">
-                                HTML image elements embed images
-                                in documents. The src attribute contains the
-                                image URL and is mandatory. &lt;img&gt; is an
-                                empty
-                                element meaning it should not have a closing
-                                tag.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Example-of-the-image-tag.jpg"
-                                alt="The example of the image element">
-                        </section>
-                        <section>
-                            <h4>Heading Elements</h4>
-                            <p class="inline-block indentation">
-                                HTML can use six different levels of
-                                heading elements. The heading elements are
-                                ordered from the highest level &lt;h1&gt; to the
-                                lowest level &lt;h6&gt;.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Headings.jpg"
-                                alt="The example of the headings elements">
-                        </section>
-                        <section>
-                            <h4>Paragraph Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;p&gt; paragraph element contains and
-                                displays a block of text.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/paragraph.jpg"
-                                alt="The example of the paragraph element">
-                        </section>
-                        <section>
-                            <h4>Unique ID Attributes</h4>
-                            <p class="inline-block indentation">
-                                In HTML, specific and unique id
-                                attributes can be assigned to different elements
-                                in order to differentiate between them.
-
-                                When needed, the id value can be called upon by
-                                CSS and JavaScript to manipulate, format, and
-                                perform specific instructions on that element
-                                and that element only. Valid id attributes
-                                should begin with a letter and should only
-                                contain letters (a-Z), digits (0-9), hyphens
-                                (-), underscores (_), and periods (.).
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/ID.jpg"
-                                alt="The image is related with the id element">
-                        </section>
-                        <section>
-                            <h4>Body Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;body&gt; element represents the content
-                                of an HTML document. Content inside &lt;body&gt;
-                                tags
-                                are rendered on the web browsers.
-
-                                Note: There can be only one &lt;body&gt;
-                                element in a document.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/body-element.jpg"
-                                alt="The example of the body element">
-                        </section>
-                        <section>
-                            <h4>Span Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;span&gt; element is an inline
-                                container for text and can be used to group
-                                text for styling purposes. However, as
-                                &lt;span&gt;
-                                is a generic container to separate
-                                pieces of text from a larger body of
-                                text, its use should be avoided if a
-                                more semantic element is available.
-                            </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/span.png"
-                                alt="The example of the span element">
-                        </section>
-                        <section>
-                            <h4>Strong Element</h4>
-                            <p class="inline-block indentation">
-                                The &lt;strong&gt; element highlights important,
-                                serious, or urgent text and browsers will
-                                normally render this highlighted text in bold by
-                                default.
-
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/strong-element.jpg"
-                                alt="The metaphorical image of a strong element">
-                        </section>
-                        <section>
-                            <h4>HTML Element</h4>
-                            <p class="inline-block indentation">
-                                An HTML element is a piece of content
-                                in an HTML document and uses the following
-                                syntax: opening tag + content + closing tag. In
-                                the code provided:</p>
-                            <ul class="indentation circle">
-                                <li>&lt;p&gt; is the opening tag.</li>
-                                <li>Hello World! is the content.</li>
-                                <li>&lt;/p&gt; is the closing tag.</li>
-                            </ul>
-                            <img class="img inline-block" style=" left: 1035px;
-                            bottom: 137px;"
-                                src="./Resources/Images/html-element.jpg"
-                                alt="The image that is associated with html elements">
-                        </section>
-                        <section>
-                            <h4>HTML Tag</h4>
-                            <p class="inline-block indentation">
-                                The syntax for a single HTML tag is an
-                                opening angle bracket &lt; followed by the
-                                element
-                                name and a closing angle bracket &gt;. Here is
-                                an
-                                example of an opening &lt;div&gt; tag.
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Htmlelementmore.jpg"
-                                alt="The example of the html element">
-                        </section>
-
-                        <section>
-                            <h4></h4>
-                            <p class="inline-block indentation">
-                                &lt;&gt;
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images"
-                                alt="The example of the  element">
-                        </section>
-                        <section>
-                            <h4></h4>
-                            <p class="inline-block indentation">
-                                &lt;&gt;
-                            </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images"
-                                alt="The example of the  element">
-                        </section>
-
+                    <h3 class="headings">Syntax and Selectors</h3>
+                    <section class="infsection">
+                        <h4 class="infheadings">Class and ID Selector</h4>
+                        <p class="inline-block infp">
+                            The class selector targets elements with a specific
+                            class attribute. It is denoted by a period (.)
+                            followed by the class name. Use it when styling
+                            multiple elements
+                            that share the same styling characteristics.
+                            Multiple elements can have the same class.
+                            <br>The ID selector targets
+                            a single element with a specific ID attribute. It is
+                            denoted by a hash (#) followed by the ID name.
+                            Use it when styling a unique element on
+                            the page. IDs should be unique within a page.</p>
+                        <img class="img inline-block"
+                            src="./Resources/Images/classandidselectors.jpg"
+                            alt="The examples of class and id selectors">
+                    </section>
+                    <section class="infsection">
+                        <h4 class="infheadings">Groups of CSS Selectors</h4>
+                        <p class="inline-block infp">
+                            Groups of CSS selectors allow you to apply the same
+                            styles to multiple selectors in a single rule. This
+                            is useful when you want to style several elements
+                            with similar styling characteristics.
+                            <br>
+                            Selector Groups Syntax:
+                            To group selectors, you separate them with commas
+                            (,). The styles within the curly braces {} will then
+                            apply to all the selectors in the group.
+                        </p>
+                        <img class="img inline-block"
+                            src="./Resources/Images/Groupsselectors.jpg"
+                            alt="The example of syntax for writing groups selectors">
+                    </section>
+                    <section class="infsection shortbox">
+                        <h4 class="infheadings">Chaining Selector</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            You can chain different selectors, for example: if
+                            your paragrpah has an class red you can chain them.
+                            Just
+                            add them to each other, like this p.red and your p
+                            selectors with only class red will change
+                            appropriately to your properties and value of
+                            this chaining selecotor.
+                        </p>
+                        <img class="narrow-img inline-block"
+                            src="./Resources/Images/Chaining.jpg"
+                            alt="The example of the chaining selector">
+                    </section>
+                    <section class="infsection shortbox">
+                        <h4 class="infheadings">Type Selector</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            In CSS, type selectors, also known as element
+                            selectors, target HTML elements based on their tag
+                            names. They are one of the simplest selectors and
+                            apply styles to all instances of a specific HTML
+                            element.</p>
+                        <img class="narrow-img inline-block"
+                            src="./Resources/Images/typeselector.jpg"
+                            alt="The example of type selector">
+                    </section>
+                    <section class="infsection shortbox">
+                        <h4 class="infheadings">Class selector</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            CSS class selectors are used to style HTML elements
+                            based on their class attribute. Unlike type
+                            selectors, which target all instances of a specific
+                            HTML element, class selectors allow you to
+                            selectively apply styles to elements with a
+                            particular class.
+                        </p>
+                        <img class="narrow-img inline-block"
+                            src="./Resources/Images/classselector.jpg"
+                            alt="The example of the class selector">
+                    </section>
+                    <section class="infsection">
+                        <h4 class="infheadings">Selector Specificity</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            In CSS, selector specificity determines which style
+                            rule takes precedence:
+                            <br>
+                            Inline styles have the highest specificity.
+                            ID selectors are more specific than class selectors,
+                            attribute selectors, and pseudo-classes.
+                            Type selectors have the lowest specificity.
+                            When conflicting styles exist, the browser applies
+                            the rule with higher specificity, and in case of a
+                            tie, the rule that appears last in the stylesheet
+                            wins.
+                        </p>
+                        <img class="img inline-block"
+                            src="./Resources/Images/Specificity.jpg"
+                            alt="The example of specificity">
+                    </section>
+                    <section class="infsection shortbox">
+                        <h4 class="infheadings">Descendant selector</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            A descendant selector in CSS is used to target an
+                            element that is a descendant of another specified
+                            element, regardless of the number of levels between
+                            them. It is denoted by placing a space between the
+                            selectors.
+                        </p>
+                        <img class="narrow-img inline-block"
+                            src="./Resources/Images/Descendant-selector.jpg"
+                            alt="The image of the example of the descendant selector">
+                    </section>
+                    <section class="infsection shortbox">
+                        <h4 class="infheadings">Link Element</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            The HTML &lt;link&gt; element is used to link
+                            external
+                            resources to an HTML document. It is commonly used
+                            to link stylesheets (CSS files), but it can also be
+                            used for other purposes, such as linking to icon
+                            files, alternate stylesheets, or external scripts.
+                        </p>
+                        <img class="narrow-img inline-block"
+                            src="./Resources/Images/CSSlink.jpg"
+                            alt="The example of using link element">
+                    </section>
+                    <section class="infsection">
+                        <h4 class="infheadings">Write CSS in Separate Files</h4>
+                        <p class="inline-block infp">
+                            Separation of HTML and CSS is a good practice
+                            for better organization and maintainability,
+                            especially in larger projects. It allows you to keep
+                            your styles in one place and makes it easier to
+                            manage and update your website's appearance.
+                        </p>
+                        <img class="img inline-block"
+                            src="./Resources/Images/seperate-files.jpg"
+                            alt="The image represents a lot of different files">
+                    </section>
+                    <section class="infsection">
+                        <h4 class="infheadings">Write CSS in HTML File</h4>
+                        <p class="inline-block infp">
+                            When writing CSS code within the &lt;style&gt; tags
+                            in the
+                            &lt;head&gt; part of an HTML document, it's
+                            essential to
+                            follow the correct syntax and structure. The CSS
+                            code consists of selectors and declaration
+                            blocks. Selectors target HTML elements, and the
+                            declaration block, enclosed in curly braces {},
+                            contains property-value pairs separated by
+                            semicolons. Comments in CSS are written using /*
+                            */ and provide explanations or notes about the
+                            code.
+                        </p>
+                        <img class="img inline-block"
+                            src="./Resources/Images/CSSinHTML.jpg"
+                            alt="The picture that shows how to write the CSS code in an HTML document">
+                    </section>
+                    <section class="infsection shortbox">
+                        <h4 class="infheadings">Inline Style</h4>
+                        <br>
+                        <p class="inline-block infp">
+                            Inline styles in HTML involve applying CSS styles
+                            directly within the HTML tags using the style
+                            attribute. This approach is useful for applying
+                            specific styles to individual elements.
+                        </p>
+                        <img class="narrow-img inline-block"
+                            src="./Resources/Images/InlineCSS.jpg"
+                            alt="The example of the inline style">
                     </section>
                 </section>
+                <section>
+                    <h3 class="headings">Visual Rules</h3>
+                    <section class="infsection">
+                        <p style="font-size: 20px; width: 900px;">
+                            When it comes to creating engaging and aesthetically
+                            pleasing websites, visual rules play a crucial role
+                            in defining the appearance and layout of web
+                            elements. Cascading Style Sheets (CSS) is the
+                            language used to apply these visual rules, providing
+                            web developers with the power to control everything
+                            from colors and fonts to spacing and responsiveness.
+                            <br>
+                            <br>
+                            Visual rules in web design refer to the set of
+                            instructions that dictate how elements on a webpage
+                            should look. These rules encompass a wide range of
+                            styling options, allowing developers to tailor the
+                            visual experience for users.</p>
+                        <br>
+                        <section class="infsection">
+                            <h4 class="infheadings">CSS declarations</h4>
+                            <p class="inline-block infp">
+                                CSS declarations are the building blocks of
+                                styles. A CSS
+                                declaration consists of a property and a value,
+                                and it defines how a particular HTML element
+                                should be styled.
+                                <br>
+                                <br>
+                                Property: This is the attribute of an HTML
+                                element that you want to style. Examples include
+                                color, font-size, margin, padding, etc.
+                                <br>
+                                <br>
+                                Value: This is the specific setting for the
+                                property. It can be a numeric value, a color, a
+                                measurement unit, or one of several predefined
+                                keywords.
+                            </p>
+                            <img class="img inline-block"
+                                src="./Resources/Images/css-declaration.jpg"
+                                alt="The example of css declaration">
+                        </section>
+                        <section class="infsection shortbox">
+                            <h4 class="infheadings">Font Size</h4>
+                            <br>
+                            <p class="inline-block infp">
+                                Setting the font size is a common CSS
+                                declaration used to control the size of text
+                                within HTML elements. The font-size property
+                                determines the size of the font, and it can be
+                                specified using various units.
+                            </p>
+                            <img class="narrow-img inline-block"
+                                src="./Resources/Images/font-size.jpg"
+                                alt="The example of the font-size property">
+                        </section>
+                        <section class="infsection shortbox">
+                            <h4 class="infheadings">Background Color</h4>
+                            <br>
+                            <p class="inline-block infp">
+                                Setting the background color is a common CSS
+                                declaration used to define the color of an
+                                element's background. The background-color
+                                property is employed for this purpose.
+                            </p>
+                            <img class="narrow-img inline-block"
+                                src="./Resources/Images/background-color.jpg"
+                                alt="The example of the writing a background-color property">
+                        </section>
+                        <section class="infsection shortbox">
+                            <h4 class="infheadings">!important Rule</h4>
+                            <br>
+                            <p class="inline-block infp">The !important rule in
+                                CSS is a way to give a declaration more weight,
+                                making it override other declarations even if
+                                they have higher specificity or appear later in
+                                the stylesheet. It is often used when you want
+                                to ensure that a particular style takes
+                                precedence.
+                            </p>
+                            <img class="narrow-img inline-block"
+                                src="./Resources/Images/important.jpg"
+                                alt="The example of the important rule">
+                        </section>
+                        <section class="infsection">
+                            <h4 class="infheadings">Opacity</h4>
+                            <p class="inline-block infp">
+                                The opacity property in CSS is used to control
+                                the transparency of an element. It takes a value
+                                between 0 and 1, where 0 is completely
+                                transparent (invisible), and 1 is completely
+                                opaque (fully visible). Values between 0 and 1
+                                represent varying levels of transparency.
+                            </p>
+                            <img class="img inline-block"
+                                src="./Resources/Images/Opacity.jpg"
+                                alt="The image of transparent windows">
+                        </section>
+                        <section class="infsection">
+                            <h4 class="infheadings">Font Weight</h4>
+                            <p class="inline-block infp">
+                                The font-weight property in CSS is used to set
+                                the thickness or boldness of the characters in a
+                                text element. It accepts various values,
+                                allowing you to specify different levels of
+                                boldness.
+                            </p>
+                            <img class="img inline-block"
+                                src="./Resources/Images/font-weight.jpg"
+                                alt="The instance of the font-weight property">
+                        </section>
+                        <section class="infsection shortbox">
+                            <h4 class="infheadings">Text Align</h4>
+                            <br>
+                            <p class="inline-block infp">The text-align property
+                                in CSS is used to set the horizontal alignment
+                                of text content within an element. It defines
+                                how the inline content of a block container is
+                                aligned within the block container's content
+                                box.
+                            </p>
+                            <img class="narrow-img inline-block"
+                                src="./Resources/Images/text-align.jpg"
+                                alt="The example of the text-align property">
+                        </section>
+                        <section class="infsection">
+                            <h4 class="infheadings">Setting foreground text
+                                color in CSS</h4>
+                            <p class="inline-block infp">
+                                In CSS, the color property is used to set the
+                                foreground text color of an element. You can
+                                specify the color using various formats such as
+                                color names, hexadecimal codes, RGB values, or
+                                HSL values.
+                            </p>
+                            <img class="img inline-block"
+                                src="./Resources/Images/color.jpg"
+                                alt="The example of the setting a color in CSS">
+                        </section>
+                        <section class="infsection ">
+                            <h4 class="infheadings">Resource URLs</h4>
+                            <br>
+                            <p class="inline-block infp">
+                                Resource URLs typically refer to the web
+                                addresses (URLs) of various resources used in
+                                web development, such as images, stylesheets,
+                                scripts, and other files. These URLs are used to
+                                locate and load these resources into web pages.
+                                In CSS, the url() function is used to wrap
+                                resource URLs. These can be applied to several
+                                properties such as the background-image.
+                            </p>
+                            <img class="img inline-block"
+                                src="./Resources/Images/url.jpg"
+                                alt="The image is associated with url">
+                        </section>
+                        <section class="infsection shortbox">
+                            <h4 class="infheadings">Background Image</h4>
+                            <br>
+                            <p class="inline-block infp">
+                                In CSS, you can set a background image for an
+                                element using the background-image property.
+                            </p>
+                            <img class="narrow-img inline-block"
+                                src="./Resources/Images/background-image.jpg"
+                                alt="The instance of how can we fill our background with an image">
+                        </section>
+                        <section class="infsection shortbox">
+                            <h4 class="infheadings">Font Family</h4>
+                            <br>
+                            <p class="inline-block infp">
+                                In Cascading Style Sheets (CSS), you can specify
+                                font families for text using the font-family
+                                property. The font-family property allows you to
+                                define a prioritized list of font family names
+                                and/or generic family names for an element.
+                            </p>
+                            <img class="narrow-img inline-block"
+                                src="./Resources/Images/font-family.jpg"
+                                alt="The example of using the font-family property">
+                        </section>
+                    </section>
+                    <section>
+                        <h3 class="headings">The Box Model</h3>
+                        <section class="infsection stylet">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Topic</th>
+                                        <th>Description</th>
+                                        <th>Example</th>
+                                        <th>Applicable Properties</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1. box-sizing property</td>
+                                        <td>Defines how the total width and
+                                            height of an element is calculated,
+                                            including padding and border.
+                                            Default value is content-box.</td>
+                                        <td>box-sizing: content-box;</td>
+                                        <td>box-sizing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. box-sizing: border-box;</td>
+                                        <td>A value for box-sizing that
+                                            includes padding and border in the
+                                            element's total width and height.
+                                            Useful for easier sizing
+                                            calculations.</td>
+                                        <td>box-sizing: border-box;</td>
+                                        <td>`box-sizing`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. CSS Margin Collapse</td>
+                                        <td>When vertical margins of adjacent
+                                            block-level elements collapse,
+                                            resulting in a margin equal to the
+                                            larger of the two adjacent margins.</td>
+                                        <td>.block-one {
+                                            margin: 5px;
+                                            }
+                                            .block-two {
+                                            margin: 15px;
+                                            }</td>
+                                        <td>Margin properties</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. CSS auto keyword</td>
+                                        <td>A value used in various properties
+                                            (e.g., margin, width) to
+                                            automatically calculate a property's
+                                            value based on the context or
+                                            content.</td>
+                                        <td>margin: 0 auto;</td>
+                                        <td>Various</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Dealing with overflow</td>
+                                        <td>How CSS handles content that
+                                            overflows the box dimensions.
+                                            Options include visible (default),
+                                            hidden, scroll, and auto.</td>
+                                        <td><code>overflow: hidden;</code></td>
+                                        <td>overflow</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. Height and Width
+                                            Maximums/Minimums</td>
+                                        <td>CSS properties (max-height,
+                                            min-height, max-width,
+                                            min-width) that set limits on the
+                                            size of an element, ensuring it
+                                            doesn't exceed or fall below
+                                            specified dimensions.</td>
+                                        <td>max-width: 500px;</td>
+                                        <td>max-height, min-height,
+                                            max-width, min-width</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. The visibility Property</td>
+                                        <td>Determines whether an element is
+                                            visible (visible) or hidden
+                                            (hidden). Unlike display: none;,
+                                            the element still takes up space in
+                                            the layout when visibility:
+                                            hidden;.</td>
+                                        <td>visibility: hidden;</td>
+                                        <td>visibility</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </section>
+                    <section>
+                        <h3 class="headings">Display and Positioning</h3>
+                        <section class="infsection stylet">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Topic</th>
+                                        <th>Description</th>
+                                        <th>Example</th>
+                                        <th>Applicable Properties</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1. CSS z-index property</td>
+                                        <td>Specifies the stack order of an
+                                            element. Elements with higher
+                                            z-index values are displayed in
+                                            front of elements with lower values.</td>
+                                        <td>z-index: 1;</td>
+                                        <td>z-index</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Fixed CSS Positioning</td>
+                                        <td>Positions an element relative to the
+                                            browser window, so it stays fixed
+                                            even when scrolling.</td>
+                                        <td>position: fixed;</td>
+                                        <td>position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. CSS display property</td>
+                                        <td>Specifies how an element should be
+                                            displayed. Common values include
+                                            block, inline, flex, and more.</td>
+                                        <td>display: flex;</td>
+                                        <td>display</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. CSS position: absolute;</td>
+                                        <td>Positions an element relative to its
+                                            closest positioned ancestor instead
+                                            of positioned relative to the
+                                            viewport, like fixed..</td>
+                                        <td>position: absolute;</td>
+                                        <td>position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. CSS position: relative;</td>
+                                        <td>Makes an element positioned relative
+                                            to its normal position in the
+                                            document flow, without changing the
+                                            layout.</td>
+                                        <td>position: relative;</td>
+                                        <td>position</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. CSS float property</td>
+                                        <td>Specifies whether an element should
+                                            be placed to the left or right of
+                                            its container, allowing text and
+                                            inline elements to wrap around it.</td>
+                                        <td>float: left;</td>
+                                        <td>float</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. The CSS clear property</td>
+                                        <td>Specifies which sides of an element
+                                            can have floating elements. It
+                                            prevents elements from wrapping
+                                            around a floated element.</td>
+                                        <td>clear: both;</td>
+                                        <td>clear</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </section>
+                    <section>
+                        <h3 class="headings">Colors</h3>
+                        <section class="infsection stylet">
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Topic</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                    <th>Applicable Properties</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1. CSS Color Alpha Values</td>
+                                    <td>Defines the level of transparency for a color using the RGBA color model. The alpha value ranges from 0 (completely transparent) to 1 (completely opaque).</td>
+                                    <td>rgba(255, 0, 0, 0.5);</td>
+                                    <td>color</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2. CSS Hexadecimal Colors</td>
+                                    <td>Specifies colors using a hexadecimal notation. The format includes three pairs of hex digits representing the intensities of red, green, and blue components.</td>
+                                    <td>#00ff00;</td>
+                                    <td>color</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3. CSS HSL Colors</td>
+                                    <td>Describes colors using the Hue-Saturation-Lightness model. Allows more intuitive color selection by specifying the hue, saturation, and lightness.</td>
+                                    <td>hsl(120, 100%, 50%);</td>
+                                    <td>color</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4. CSS rgb() Colors</td>
+                                    <td>Specifies colors using the Red-Green-Blue color model. The values range from 0 to 255 for each color component.</td>
+                                    <td>rgb(255, 0, 0);</td>
+                                    <td>color</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5. Color Name Keywords</td>
+                                    <td>Uses predefined color names such as "red," "blue," etc. Limited set of named colors available in CSS.</td>
+                                    <td>color: red;</td>
+                                    <td>color</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </section>
+                    </section>
+                    <section>
+                        <h3 class="headings">Typography</h3>
+                        <section class="infsection stylet">
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Topic</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                    <th>Applicable Properties</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1. CSS `font-weight` Property</td>
+                                    <td>Sets the thickness of the font characters. Common values include normal, bold, bolder, lighter, or numeric values from 100 to 900.</td>
+                                    <td>font-weight: bold;</td>
+                                    <td>font-weight</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2. CSS `font-style` Property</td>
+                                    <td>Determines the font style of the text. Values can be normal, italic, or oblique.</td>
+                                    <td>font-style: italic;</td>
+                                    <td>font-style</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3. CSS `@font-face` Rule</td>
+                                    <td>Allows the definition of custom fonts and their sources. Useful for using non-standard or web fonts.</td>
+                                    <td>@font-face { font-family: 'CustomFont'; src: url('custom-font.woff2'.; }</td>
+                                    <td>@font-face</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4. CSS Fallback Fonts</td>
+                                    <td>Specifies a list of font family names and/or generic family names to be used as a fallback in case the preferred font is not available.</td>
+                                    <td>font-family: 'PreferredFont', Arial, sans-serif;</td>
+                                    <td>font-family</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5. The CSS `line-height` Property</td>
+                                    <td>Sets the height of a line of text. It can be a number, a percentage, or a length value.</td>
+                                    <td>line-height: 1.5;</td>
+                                    <td>line-height</td>
+                                  </tr>
+                                  <tr>
+                                    <td>6. CSS Linking Fonts</td>
+                                    <td>Refers to the process of including external font files in a web page using various methods such as @font-face or linking to web font services.</td>
+                                    <td>N/A</td>
+                                    <td>N/A</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </section>
+                    </section>
+                </section>
+                <aside>
+                    <a id="back" href="#menu">Back to top</a>
+                </aside>
             </section>
         </main>
         <footer class="lora">
-            <p> &copy;<span class="footer"> 2023</span> The cheat sheets.</p>
+            <p> &copy;<span class="footer"> 2023</span>
+                The cheat sheets.</p>
         </footer>
     </body>
 
