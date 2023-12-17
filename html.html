@@ -18,10 +18,9 @@
             <section class="top">
                 <nav class="list">
                     <ul>
-                        <li><a href="./index">Home</a></li>
+                        <li><a href="./index" id="home">Home</a></li>
                         <li><a href="./html">HTML</a></li>
                         <li><a href="./css">CSS</a></li>
-                        <li><a class="menu" href="./menu" id="menu">Menu</a></li>
                     </ul>
                 </nav>
                 <div class="banner afacad">
@@ -30,6 +29,17 @@
                 </div>
             </section>
         </header>
+        <!-- Sticky Menu -->
+        <div class="sticky-menu">
+            <!-- Menu items go here -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#elements">Elms and Struc</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#semantic">Semantic Murkup</a></li>
+            </ul>
+        </div>
         <main class="afacad">
             <section>
                 <h2 id="html" class="title">HTML</h2>
@@ -63,7 +73,7 @@
 
                     <p>Here are some key HTML elements that form the
                         backbone of web development:</p>
-                    <ul class="circle left" style="top: 4px; left: 47px;">
+                    <ul class="circle left" style="top: 4px; left: 47px; font-size: 18px;">
                         <li>Headings;</li>
                         <li>Paragraphs;</li>
                         <li>Images;</li>
@@ -131,7 +141,7 @@
                     <br>
                 </article>
                 <section>
-                    <h3 class="headings">Elements and
+                    <h3 class="headings" id="elements">Elements and
                         Structure</h3>
                     <section class="infsection">
                         <!--<h4 class="indentation">HTML
@@ -660,7 +670,7 @@
                                 </section> -->
                 </section>
                 <section>
-                    <h3 class="headings">Tables</h3>
+                    <h3 class="headings" id="tables">Tables</h3>
                     <section class="infsection stylet">
                         <p>
                             In HTML, there are several elements related to
@@ -932,7 +942,7 @@
                     </section>
                 </section>
                 <section>
-                    <h3 class="headings">Semantic HTML</h3>
+                    <h3 class="headings" id="semantic">Semantic HTML</h3>
                     <section class="infsection stylet">
                         <p>
                             Semantic HTML, or structural HTML, plays a vital
@@ -1062,7 +1072,7 @@
                     </section>
                 </section>
                 <aside>
-                    <a id="back" href="#menu">Back to top</a>
+                    <a id="back" href="#home">Back to top</a>
                 </aside>
             </section>
         </main>
