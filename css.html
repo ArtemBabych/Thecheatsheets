@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=Lora:wght@400;700&family=Mansalva&family=Space+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=Lora:wght@400;700&family=Mansalva&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./Resources/CSS/Reset-CSS.css">
         <link rel="stylesheet" href="./Resources/CSS/styles.css" type="text/css">
@@ -18,10 +18,9 @@
             <section class="top">
                 <nav class="list">
                     <ul>
-                        <li><a href="./index">Home</a></li>
+                        <li><a href="./index" id="home">Home</a></li>
                         <li><a href="./html">HTML</a></li>
                         <li><a href="./css">CSS</a></li>
-                        <li><a class="menu" href="./menu" id="menu">Menu</a></li>
                     </ul>
                 </nav>
                 <div class="banner afacad">
@@ -30,7 +29,21 @@
                 </div>
             </section>
         </header>
-        <main class="afacad">
+        <!-- Sticky Menu -->
+        <div class="sticky-menu">
+            <!-- Menu items go here -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#synt">Synt&Sel</a></li>
+                <li><a href="#visual">Visual Rules</a></li>
+                <li><a href="#boxmodel">Box Model</a></li>
+                <li><a href="#dis">Disp&Pos</a></li>
+                <li><a href="#col">Colors</a></li>
+                <li><a href="#typo">Typography</a></li>
+            </ul>
+        </div>
+        <main class="afacad transformup">  
             <section>
                 <h2 id="css" class="title">CSS</h2>
                 <article class="Greetings">
@@ -70,7 +83,7 @@
                     <br>
                 </article>
                 <section>
-                    <h3 class="headings">Syntax and Selectors</h3>
+                    <h3 class="headings" id="synt">Syntax and Selectors</h3>
                     <section class="infsection">
                         <h4 class="infheadings">Class and ID Selector</h4>
                         <p class="inline-block infp">
@@ -247,7 +260,7 @@
                     </section>
                 </section>
                 <section>
-                    <h3 class="headings">Visual Rules</h3>
+                    <h3 class="headings" id="visual">Visual Rules</h3>
                     <section class="infsection">
                         <p style="font-size: 20px; width: 900px;">
                             When it comes to creating engaging and aesthetically
@@ -430,7 +443,7 @@
                         </section>
                     </section>
                     <section>
-                        <h3 class="headings">The Box Model</h3>
+                        <h3 class="headings" id="boxmodel">The Box Model</h3>
                         <section class="infsection stylet">
                             <table>
                                 <thead>
@@ -523,7 +536,7 @@
                         </section>
                     </section>
                     <section>
-                        <h3 class="headings">Display and Positioning</h3>
+                        <h3 class="headings" id="dis">Display and Positioning</h3>
                         <section class="infsection stylet">
                             <table>
                                 <thead>
@@ -601,108 +614,149 @@
                         </section>
                     </section>
                     <section>
-                        <h3 class="headings">Colors</h3>
+                        <h3 class="headings" id="col">Colors</h3>
                         <section class="infsection stylet">
                             <table>
                                 <thead>
-                                  <tr>
-                                    <th>Topic</th>
-                                    <th>Description</th>
-                                    <th>Example</th>
-                                    <th>Applicable Properties</th>
-                                  </tr>
+                                    <tr>
+                                        <th>Topic</th>
+                                        <th>Description</th>
+                                        <th>Example</th>
+                                        <th>Applicable Properties</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                    <td>1. CSS Color Alpha Values</td>
-                                    <td>Defines the level of transparency for a color using the RGBA color model. The alpha value ranges from 0 (completely transparent) to 1 (completely opaque).</td>
-                                    <td>rgba(255, 0, 0, 0.5);</td>
-                                    <td>color</td>
-                                  </tr>
-                                  <tr>
-                                    <td>2. CSS Hexadecimal Colors</td>
-                                    <td>Specifies colors using a hexadecimal notation. The format includes three pairs of hex digits representing the intensities of red, green, and blue components.</td>
-                                    <td>#00ff00;</td>
-                                    <td>color</td>
-                                  </tr>
-                                  <tr>
-                                    <td>3. CSS HSL Colors</td>
-                                    <td>Describes colors using the Hue-Saturation-Lightness model. Allows more intuitive color selection by specifying the hue, saturation, and lightness.</td>
-                                    <td>hsl(120, 100%, 50%);</td>
-                                    <td>color</td>
-                                  </tr>
-                                  <tr>
-                                    <td>4. CSS rgb() Colors</td>
-                                    <td>Specifies colors using the Red-Green-Blue color model. The values range from 0 to 255 for each color component.</td>
-                                    <td>rgb(255, 0, 0);</td>
-                                    <td>color</td>
-                                  </tr>
-                                  <tr>
-                                    <td>5. Color Name Keywords</td>
-                                    <td>Uses predefined color names such as "red," "blue," etc. Limited set of named colors available in CSS.</td>
-                                    <td>color: red;</td>
-                                    <td>color</td>
-                                  </tr>
+                                    <tr>
+                                        <td>1. CSS Color Alpha Values</td>
+                                        <td>Defines the level of transparency
+                                            for a color using the RGBA color
+                                            model. The alpha value ranges from 0
+                                            (completely transparent) to 1
+                                            (completely opaque).</td>
+                                        <td>rgba(255, 0, 0, 0.5);</td>
+                                        <td>color</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. CSS Hexadecimal Colors</td>
+                                        <td>Specifies colors using a hexadecimal
+                                            notation. The format includes three
+                                            pairs of hex digits representing the
+                                            intensities of red, green, and blue
+                                            components.</td>
+                                        <td>#00ff00;</td>
+                                        <td>color</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. CSS HSL Colors</td>
+                                        <td>Describes colors using the
+                                            Hue-Saturation-Lightness model.
+                                            Allows more intuitive color
+                                            selection by specifying the hue,
+                                            saturation, and lightness.</td>
+                                        <td>hsl(120, 100%, 50%);</td>
+                                        <td>color</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. CSS rgb() Colors</td>
+                                        <td>Specifies colors using the
+                                            Red-Green-Blue color model. The
+                                            values range from 0 to 255 for each
+                                            color component.</td>
+                                        <td>rgb(255, 0, 0);</td>
+                                        <td>color</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Color Name Keywords</td>
+                                        <td>Uses predefined color names such as
+                                            "red," "blue," etc. Limited set of
+                                            named colors available in CSS.</td>
+                                        <td>color: red;</td>
+                                        <td>color</td>
+                                    </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </section>
                     </section>
                     <section>
-                        <h3 class="headings">Typography</h3>
+                        <h3 class="headings monospaceitalic" id="typo">Typography</h3>
                         <section class="infsection stylet">
-                            <table>
+                            <table style="margin-bottom: 15px;">
                                 <thead>
-                                  <tr>
-                                    <th>Topic</th>
-                                    <th>Description</th>
-                                    <th>Example</th>
-                                    <th>Applicable Properties</th>
-                                  </tr>
+                                    <tr class="monospacebold">
+                                        <th>Topic</th>
+                                        <th>Description</th>
+                                        <th>Example</th>
+                                        <th>Applicable Properties</th>
+                                    </tr>
                                 </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1. CSS `font-weight` Property</td>
-                                    <td>Sets the thickness of the font characters. Common values include normal, bold, bolder, lighter, or numeric values from 100 to 900.</td>
-                                    <td>font-weight: bold;</td>
-                                    <td>font-weight</td>
-                                  </tr>
-                                  <tr>
-                                    <td>2. CSS `font-style` Property</td>
-                                    <td>Determines the font style of the text. Values can be normal, italic, or oblique.</td>
-                                    <td>font-style: italic;</td>
-                                    <td>font-style</td>
-                                  </tr>
-                                  <tr>
-                                    <td>3. CSS `@font-face` Rule</td>
-                                    <td>Allows the definition of custom fonts and their sources. Useful for using non-standard or web fonts.</td>
-                                    <td>@font-face { font-family: 'CustomFont'; src: url('custom-font.woff2'.; }</td>
-                                    <td>@font-face</td>
-                                  </tr>
-                                  <tr>
-                                    <td>4. CSS Fallback Fonts</td>
-                                    <td>Specifies a list of font family names and/or generic family names to be used as a fallback in case the preferred font is not available.</td>
-                                    <td>font-family: 'PreferredFont', Arial, sans-serif;</td>
-                                    <td>font-family</td>
-                                  </tr>
-                                  <tr>
-                                    <td>5. The CSS `line-height` Property</td>
-                                    <td>Sets the height of a line of text. It can be a number, a percentage, or a length value.</td>
-                                    <td>line-height: 1.5;</td>
-                                    <td>line-height</td>
-                                  </tr>
-                                  <tr>
-                                    <td>6. CSS Linking Fonts</td>
-                                    <td>Refers to the process of including external font files in a web page using various methods such as @font-face or linking to web font services.</td>
-                                    <td>N/A</td>
-                                    <td>N/A</td>
-                                  </tr>
+                                <tbody class="VT323"
+                                    style="font-style: normal; font-size: medium;" >
+                                    <tr>
+                                        <td>1. CSS `font-weight` Property</td>
+                                        <td>Sets the thickness of the font
+                                            characters. Common values include
+                                            normal, bold, bolder, lighter, or
+                                            numeric values from 100 to 900.</td>
+                                        <td>font-weight: bold;</td>
+                                        <td>font-weight</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. CSS `font-style` Property</td>
+                                        <td>Determines the font style of the
+                                            text. Values can be normal, italic,
+                                            or oblique.</td>
+                                        <td>font-style: italic;</td>
+                                        <td>font-style</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. CSS `@font-face` Rule</td>
+                                        <td>Allows the definition of custom
+                                            fonts and their sources. Useful for
+                                            using non-standard or web fonts.</td>
+                                        <td>@font-face { font-family:
+                                            'CustomFont'; src: url('custom-font.woff2') format(); <br>}</td>
+                                        <td>@font-face</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. CSS Fallback Fonts</td>
+                                        <td>Specifies a list of font family
+                                            names and/or generic family names to
+                                            be used as a fallback in case the
+                                            preferred font is not available.</td>
+                                        <td>font-family: 'PreferredFont', Arial,
+                                            sans-serif;</td>
+                                        <td>font-family</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. The CSS `line-height` Property</td>
+                                        <td>Sets the height of a line of text.
+                                            It can be a number, a percentage, or
+                                            a length value.</td>
+                                        <td>line-height: 1.5;</td>
+                                        <td>line-height</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. CSS Linking Fonts</td>
+                                        <td>Refers to the process of including
+                                            external font files in a web page
+                                            using various methods such as
+                                            @font-face or linking to web font
+                                            services.</td>
+                                        <td>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                                            &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                                            &lt;link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+                                            rel="stylesheet"&gt;</td>
+                                        <td>&lt;link rel="preconnect" href=""&gt;
+                                            &lt;link href=""
+                                            rel="stylesheet"&gt;</td>
+                                    </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </section>
                     </section>
                 </section>
                 <aside>
-                    <a id="back" href="#menu">Back to top</a>
+                    <a id="back" href="#home">Back to top</a>
                 </aside>
             </section>
         </main>
