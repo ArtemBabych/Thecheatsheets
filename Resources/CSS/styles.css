@@ -347,3 +347,15 @@ ol.specindent {
     font-weight: bold;
     text-shadow: 1px 1px 2px #000000;
 }
+
+/*Style for a dog*/
+#dog {
+    top: 10400px;
+    right: 0px;
+    left: 1136px;
+    width: 400px;
+    height: 305px;
+    transform: rotate(40deg);
+    position: absolute;
+    z-index: -2;
+}
