@@ -28,6 +28,7 @@
     font-family: 'VT323', monospace;
     src: url('../Fonts/VT323/') format('truetype');
 }
+
 body {
     background-color: bisque;
     font-size: large;
@@ -45,7 +46,7 @@ main {
     word-spacing: 1px;
     font-size: 18px;
     margin: 0 auto;
-    
+
 }
 
 footer {
@@ -135,27 +136,26 @@ nav.list li {
     display: inline-block;
     position: relative;
     font-size: 20px;
-    padding: 15px;
+    padding: 15px 0px;
 }
 
 nav.list a {
     text-decoration: none;
     color: #ffffff;
     text-shadow: 1px 1px 10px #000000;
+    padding: 15px;
 }
 
-nav.list a.menu {
-    position: relative;
-    color: #6f3c3c;
-    left: 1570px;
-    font-size: 20px;
-    text-shadow: none;
+nav.list a:hover {
+    background-color: hsl(0deg 0% 100% / 13%);
 }
 
+
+/*other code*/
 main a:hover {
     text-decoration: underline;
     text-decoration-color: #000000;
-    color:burlywood;
+    color: burlywood;
 }
 
 section.stylet p,
@@ -342,10 +342,18 @@ ol.specindent {
 }
 
 .sticky-menu a {
+    display: block;
     text-decoration: none;
     color: snow;
     font-weight: bold;
     text-shadow: 1px 1px 2px #000000;
+    border-radius: 7px;
+}
+
+.sticky-menu a:hover {
+    background-color: hsl(0deg 0% 100% / 20%);
+    font-weight: 100;
+    color: #6f3c3c;
 }
 
 /*Style for a dog*/
