@@ -231,6 +231,7 @@ ol.specindent {
 
 .VT323 {
     font-family: 'VT323', monospace;
+    font-size: 1.1em
 }
 
 .indentation {
@@ -269,6 +270,7 @@ ol.specindent {
     overflow: hidden;
     display: grid;
     justify-items: center;
+    align-items: center;
 }
 
 .img {
@@ -421,6 +423,7 @@ ol.specindent {
     transform: rotate(40deg);
     position: absolute;
     z-index: -2;
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {

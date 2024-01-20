@@ -9,7 +9,8 @@
             href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=Lora:wght@400;700&family=Mansalva&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./Resources/CSS/Reset-CSS.css">
-        <link rel="stylesheet" href="./Resources/CSS/styles.css" type="text/css">
+        <link rel="stylesheet" href="./Resources/CSS/styles.css"
+            type="text/css">
         <title>The cheat sheets</title>
     </head>
 
@@ -22,6 +23,20 @@
                         <li><a href="./html">HTML</a></li>
                         <li><a href="./css">CSS</a></li>
                     </ul>
+                    <div id="backbutton">
+                        <a id="disappearing" style="display: inline-block;"
+                            href="https://artembabych.github.io/The-list-of-the-websites/index">Back
+                            to the
+                            list</a>
+
+                    </div>
+                    <div>
+                        <a id="listicon"
+                            href="https://artembabych.github.io/The-list-of-the-websites/index"><img
+                                title="Return to the main list of the websites"
+                                src="./Resources/Icons/log-out.svg"
+                                alt="back to the list"></a>
+                    </div>
                 </nav>
                 <div class="banner afacad">
                     <h1>The cheat sheets</h1>
@@ -84,186 +99,246 @@
                 </article>
                 <section>
                     <h3 class="headings" id="synt">Syntax and Selectors</h3>
-                    <section class="infsection">
-                        <h4 class="infheadings">Class and ID Selector</h4>
-                        <p class="inline-block infp">
-                            The class selector targets elements with a specific
-                            class attribute. It is denoted by a period (.)
-                            followed by the class name. Use it when styling
-                            multiple elements
-                            that share the same styling characteristics.
-                            Multiple elements can have the same class.
-                            <br>The ID selector targets
-                            a single element with a specific ID attribute. It is
-                            denoted by a hash (#) followed by the ID name.
-                            Use it when styling a unique element on
-                            the page. IDs should be unique within a page.</p>
-                        <img class="img inline-block"
-                            src="./Resources/Images/classandidselectors.jpg"
-                            alt="The examples of class and id selectors">
-                    </section>
-                    <section class="infsection">
-                        <h4 class="infheadings">Groups of CSS Selectors</h4>
-                        <p class="inline-block infp">
-                            Groups of CSS selectors allow you to apply the same
-                            styles to multiple selectors in a single rule. This
-                            is useful when you want to style several elements
-                            with similar styling characteristics.
-                            <br>
-                            Selector Groups Syntax:
-                            To group selectors, you separate them with commas
-                            (,). The styles within the curly braces {} will then
-                            apply to all the selectors in the group.
-                        </p>
-                        <img class="img inline-block"
-                            src="./Resources/Images/Groupsselectors.jpg"
-                            alt="The example of syntax for writing groups selectors">
-                    </section>
-                    <section class="infsection shortbox">
-                        <h4 class="infheadings">Chaining Selector</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            You can chain different selectors, for example: if
-                            your paragrpah has an class red you can chain them.
-                            Just
-                            add them to each other, like this p.red and your p
-                            selectors with only class red will change
-                            appropriately to your properties and value of
-                            this chaining selecotor.
-                        </p>
-                        <img class="narrow-img inline-block"
-                            src="./Resources/Images/Chaining.jpg"
-                            alt="The example of the chaining selector">
-                    </section>
-                    <section class="infsection shortbox">
-                        <h4 class="infheadings">Type Selector</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            In CSS, type selectors, also known as element
-                            selectors, target HTML elements based on their tag
-                            names. They are one of the simplest selectors and
-                            apply styles to all instances of a specific HTML
-                            element.</p>
-                        <img class="narrow-img inline-block"
-                            src="./Resources/Images/typeselector.jpg"
-                            alt="The example of type selector">
-                    </section>
-                    <section class="infsection shortbox">
-                        <h4 class="infheadings">Class selector</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            CSS class selectors are used to style HTML elements
-                            based on their class attribute. Unlike type
-                            selectors, which target all instances of a specific
-                            HTML element, class selectors allow you to
-                            selectively apply styles to elements with a
-                            particular class.
-                        </p>
-                        <img class="narrow-img inline-block"
-                            src="./Resources/Images/classselector.jpg"
-                            alt="The example of the class selector">
-                    </section>
-                    <section class="infsection">
-                        <h4 class="infheadings">Selector Specificity</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            In CSS, selector specificity determines which style
-                            rule takes precedence:
-                            <br>
-                            Inline styles have the highest specificity.
-                            ID selectors are more specific than class selectors,
-                            attribute selectors, and pseudo-classes.
-                            Type selectors have the lowest specificity.
-                            When conflicting styles exist, the browser applies
-                            the rule with higher specificity, and in case of a
-                            tie, the rule that appears last in the stylesheet
-                            wins.
-                        </p>
-                        <img class="img inline-block"
-                            src="./Resources/Images/Specificity.jpg"
-                            alt="The example of specificity">
-                    </section>
-                    <section class="infsection shortbox">
-                        <h4 class="infheadings">Descendant selector</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            A descendant selector in CSS is used to target an
-                            element that is a descendant of another specified
-                            element, regardless of the number of levels between
-                            them. It is denoted by placing a space between the
-                            selectors.
-                        </p>
-                        <img class="narrow-img inline-block"
-                            src="./Resources/Images/Descendant-selector.jpg"
-                            alt="The image of the example of the descendant selector">
-                    </section>
-                    <section class="infsection shortbox">
-                        <h4 class="infheadings">Link Element</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            The HTML &lt;link&gt; element is used to link
-                            external
-                            resources to an HTML document. It is commonly used
-                            to link stylesheets (CSS files), but it can also be
-                            used for other purposes, such as linking to icon
-                            files, alternate stylesheets, or external scripts.
-                        </p>
-                        <img class="narrow-img inline-block"
-                            src="./Resources/Images/CSSlink.jpg"
-                            alt="The example of using link element">
-                    </section>
-                    <section class="infsection">
-                        <h4 class="infheadings">Write CSS in Separate Files</h4>
-                        <p class="inline-block infp">
-                            Separation of HTML and CSS is a good practice
-                            for better organization and maintainability,
-                            especially in larger projects. It allows you to keep
-                            your styles in one place and makes it easier to
-                            manage and update your website's appearance.
-                        </p>
-                        <img class="img inline-block"
-                            src="./Resources/Images/seperate-files.jpg"
-                            alt="The image represents a lot of different files">
-                    </section>
-                    <section class="infsection">
-                        <h4 class="infheadings">Write CSS in HTML File</h4>
-                        <p class="inline-block infp">
-                            When writing CSS code within the &lt;style&gt; tags
-                            in the
-                            &lt;head&gt; part of an HTML document, it's
-                            essential to
-                            follow the correct syntax and structure. The CSS
-                            code consists of selectors and declaration
-                            blocks. Selectors target HTML elements, and the
-                            declaration block, enclosed in curly braces {},
-                            contains property-value pairs separated by
-                            semicolons. Comments in CSS are written using /*
-                            */ and provide explanations or notes about the
-                            code.
-                        </p>
-                        <img class="img inline-block"
-                            src="./Resources/Images/CSSinHTML.jpg"
-                            alt="The picture that shows how to write the CSS code in an HTML document">
-                    </section>
-                    <section class="infsection shortbox">
-                        <h4 class="infheadings">Inline Style</h4>
-                        <br>
-                        <p class="inline-block infp">
-                            Inline styles in HTML involve applying CSS styles
-                            directly within the HTML tags using the style
-                            attribute. This approach is useful for applying
-                            specific styles to individual elements.
-                        </p>
-                        <img class="narrow-img inline-block"
-                            src="./Resources/Images/InlineCSS.jpg"
-                            alt="The example of the inline style">
-                    </section>
+                    <div class="sectioncontainer">
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Class and ID
+                                Selector</h4>
+                            <p class="inline-block infp">
+                                The class selector targets elements with a
+                                specific
+                                class attribute. It is denoted by a period (.)
+                                followed by the class name. Use it when styling
+                                multiple elements
+                                that share the same styling characteristics.
+                                Multiple elements can have the same class.
+                                <br>The ID selector targets
+                                a single element with a specific ID attribute.
+                                It is
+                                denoted by a hash (#) followed by the ID name.
+                                Use it when styling a unique element on
+                                the page. IDs should be unique within a
+                                page.</p>
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/classandidselectors.jpg"
+                                    alt="The examples of class and id selectors">
+                            </div>
+
+                        </section>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Groups of CSS
+                                Selectors</h4>
+                            <p class="inline-block infp">
+                                Groups of CSS selectors allow you to apply the
+                                same
+                                styles to multiple selectors in a single rule.
+                                This
+                                is useful when you want to style several
+                                elements
+                                with similar styling characteristics.
+                                <br>
+                                Selector Groups Syntax:
+                                To group selectors, you separate them with
+                                commas
+                                (,). The styles within the curly braces {} will
+                                then
+                                apply to all the selectors in the group.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/Groupsselectors.jpg"
+                                    alt="The example of syntax for writing groups selectors">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Chaining
+                                Selector</h4>
+                            <p class="inline-block infp">
+                                You can chain different selectors, for example:
+                                if
+                                your paragrpah has an class red you can chain
+                                them.
+                                Just
+                                add them to each other, like this p.red and your
+                                p
+                                selectors with only class red will change
+                                appropriately to your properties and value of
+                                this chaining selecotor.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/Chaining.jpg"
+                                    alt="The example of the chaining selector">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Type
+                                Selector</h4>
+                            <p class="inline-block infp">
+                                In CSS, type selectors, also known as element
+                                selectors, target HTML elements based on their
+                                tag
+                                names. They are one of the simplest selectors
+                                and
+                                apply styles to all instances of a specific HTML
+                                element.</p>
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/typeselector.jpg"
+                                    alt="The example of type selector">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Class
+                                selector</h4>
+                            <p class="inline-block infp">
+                                CSS class selectors are used to style HTML
+                                elements
+                                based on their class attribute. Unlike type
+                                selectors, which target all instances of a
+                                specific
+                                HTML element, class selectors allow you to
+                                selectively apply styles to elements with a
+                                particular class.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/classselector.jpg"
+                                    alt="The example of the class selector">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Selector
+                                Specificity</h4>
+                            <p class="inline-block infp">
+                                In CSS, selector specificity determines which
+                                style
+                                rule takes precedence:
+                                <br>
+                                Inline styles have the highest specificity.
+                                ID selectors are more specific than class
+                                selectors,
+                                attribute selectors, and pseudo-classes.
+                                Type selectors have the lowest specificity.
+                                When conflicting styles exist, the browser
+                                applies
+                                the rule with higher specificity, and in case of
+                                a
+                                tie, the rule that appears last in the
+                                stylesheet
+                                wins.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/Specificity.jpg"
+                                    alt="The example of specificity">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Descendant
+                                selector</h4>
+                            <p class="inline-block infp">
+                                A descendant selector in CSS is used to target
+                                an
+                                element that is a descendant of another
+                                specified
+                                element, regardless of the number of levels
+                                between
+                                them. It is denoted by placing a space between
+                                the
+                                selectors.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/Descendant-selector.jpg"
+                                    alt="The image of the example of the descendant selector">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Link
+                                Element</h4>
+                            <p class="inline-block infp">
+                                The HTML &lt;link&gt; element is used to link
+                                external
+                                resources to an HTML document. It is commonly
+                                used
+                                to link stylesheets (CSS files), but it can also
+                                be
+                                used for other purposes, such as linking to icon
+                                files, alternate stylesheets, or external
+                                scripts.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/CSSlink.jpg"
+                                    alt="The example of using link element">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Write CSS in
+                                Separate Files</h4>
+                            <p class="inline-block infp">
+                                Separation of HTML and CSS is a good practice
+                                for better organization and maintainability,
+                                especially in larger projects. It allows you to
+                                keep
+                                your styles in one place and makes it easier to
+                                manage and update your website's appearance.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/seperate-files.jpg"
+                                    alt="The image represents a lot of different files">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Write CSS in
+                                HTML
+                                File</h4>
+                            <p class="inline-block infp">
+                                When writing CSS code within the &lt;style&gt;
+                                tags
+                                in the
+                                &lt;head&gt; part of an HTML document, it's
+                                essential to
+                                follow the correct syntax and structure. The CSS
+                                code consists of selectors and declaration
+                                blocks. Selectors target HTML elements, and the
+                                declaration block, enclosed in curly braces {},
+                                contains property-value pairs separated by
+                                semicolons. Comments in CSS are written using /*
+                                */ and provide explanations or notes about the
+                                code.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/CSSinHTML.jpg"
+                                    alt="The picture that shows how to write the CSS code in an HTML document">
+                            </div>
+                        </section>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Inline
+                                Style</h4>
+                            <p class="inline-block infp">
+                                Inline styles in HTML involve applying CSS
+                                styles
+                                directly within the HTML tags using the style
+                                attribute. This approach is useful for applying
+                                specific styles to individual elements.
+                            </p>
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/InlineCSS.jpg"
+                                    alt="The example of the inline style">
+                            </div>
+                        </section>
+                    </div>
                 </section>
                 <hr>
                 <section>
                     <h3 class="headings" id="visual">Visual Rules</h3>
                     <section class="infsection">
-                        <p style="font-size: 20px; width: 900px;">
+                        <p>
                             When it comes to creating engaging and aesthetically
                             pleasing websites, visual rules play a crucial role
                             in defining the appearance and layout of web
@@ -279,8 +354,9 @@
                             styling options, allowing developers to tailor the
                             visual experience for users.</p>
                         <br>
-                        <section class="infsection">
-                            <h4 class="infheadings">CSS declarations</h4>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">CSS
+                                declarations</h4>
                             <p class="inline-block infp">
                                 CSS declarations are the building blocks of
                                 styles. A CSS
@@ -299,13 +375,14 @@
                                 measurement unit, or one of several predefined
                                 keywords.
                             </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/css-declaration.jpg"
-                                alt="The example of css declaration">
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/css-declaration.jpg"
+                                    alt="The example of css declaration">
+                            </div>
                         </section>
-                        <section class="infsection shortbox">
-                            <h4 class="infheadings">Font Size</h4>
-                            <br>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Font Size</h4>
                             <p class="inline-block infp">
                                 Setting the font size is a common CSS
                                 declaration used to control the size of text
@@ -313,26 +390,30 @@
                                 determines the size of the font, and it can be
                                 specified using various units.
                             </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/font-size.jpg"
-                                alt="The example of the font-size property">
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/font-size.jpg"
+                                    alt="The example of the font-size property">
+                            </div>
                         </section>
-                        <section class="infsection shortbox">
-                            <h4 class="infheadings">Background Color</h4>
-                            <br>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Background
+                                Color</h4>
                             <p class="inline-block infp">
                                 Setting the background color is a common CSS
                                 declaration used to define the color of an
                                 element's background. The background-color
                                 property is employed for this purpose.
                             </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/background-color.jpg"
-                                alt="The example of the writing a background-color property">
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/background-color.jpg"
+                                    alt="The example of the writing a background-color property">
+                            </div>
                         </section>
-                        <section class="infsection shortbox">
-                            <h4 class="infheadings">!important Rule</h4>
-                            <br>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">!important
+                                Rule</h4>
                             <p class="inline-block infp">The !important rule in
                                 CSS is a way to give a declaration more weight,
                                 making it override other declarations even if
@@ -341,12 +422,14 @@
                                 to ensure that a particular style takes
                                 precedence.
                             </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/important.jpg"
-                                alt="The example of the important rule">
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/important.jpg"
+                                    alt="The example of the important rule">
+                            </div>
                         </section>
-                        <section class="infsection">
-                            <h4 class="infheadings">Opacity</h4>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Opacity</h4>
                             <p class="inline-block infp">
                                 The opacity property in CSS is used to control
                                 the transparency of an element. It takes a value
@@ -355,12 +438,14 @@
                                 opaque (fully visible). Values between 0 and 1
                                 represent varying levels of transparency.
                             </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/Opacity.jpg"
-                                alt="The image of transparent windows">
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/Opacity.jpg"
+                                    alt="The image of transparent windows">
+                            </div>
                         </section>
-                        <section class="infsection">
-                            <h4 class="infheadings">Font Weight</h4>
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Font Weight</h4>
                             <p class="inline-block infp">
                                 The font-weight property in CSS is used to set
                                 the thickness or boldness of the characters in a
@@ -368,13 +453,14 @@
                                 allowing you to specify different levels of
                                 boldness.
                             </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/font-weight.jpg"
-                                alt="The instance of the font-weight property">
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/font-weight.jpg"
+                                    alt="The instance of the font-weight property">
+                            </div>
                         </section>
-                        <section class="infsection shortbox">
-                            <h4 class="infheadings">Text Align</h4>
-                            <br>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Text Align</h4>
                             <p class="inline-block infp">The text-align property
                                 in CSS is used to set the horizontal alignment
                                 of text content within an element. It defines
@@ -382,12 +468,15 @@
                                 aligned within the block container's content
                                 box.
                             </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/text-align.jpg"
-                                alt="The example of the text-align property">
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/text-align.jpg"
+                                    alt="The example of the text-align property">
+                            </div>
                         </section>
-                        <section class="infsection">
-                            <h4 class="infheadings">Setting foreground text
+                        <section class="infsection gridcontainer">
+                            <h4 class="infheadings gridheading">Setting
+                                foreground text
                                 color in CSS</h4>
                             <p class="inline-block infp">
                                 In CSS, the color property is used to set the
@@ -396,13 +485,15 @@
                                 color names, hexadecimal codes, RGB values, or
                                 HSL values.
                             </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/color.jpg"
-                                alt="The example of the setting a color in CSS">
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/color.jpg"
+                                    alt="The example of the setting a color in CSS">
+                            </div>
                         </section>
-                        <section class="infsection ">
-                            <h4 class="infheadings">Resource URLs</h4>
-                            <br>
+                        <section class="infsection gridcontainer ">
+                            <h4 class="infheadings gridheading">Resource
+                                URLs</h4>
                             <p class="inline-block infp">
                                 Resource URLs typically refer to the web
                                 addresses (URLs) of various resources used in
@@ -413,24 +504,27 @@
                                 resource URLs. These can be applied to several
                                 properties such as the background-image.
                             </p>
-                            <img class="img inline-block"
-                                src="./Resources/Images/url.jpg"
-                                alt="The image is associated with url">
+                            <div class="imgcontainer"> <img
+                                    class="img inline-block"
+                                    src="./Resources/Images/url.jpg"
+                                    alt="The image is associated with url">
+                            </div>
                         </section>
-                        <section class="infsection shortbox">
-                            <h4 class="infheadings">Background Image</h4>
-                            <br>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Background
+                                Image</h4>
                             <p class="inline-block infp">
                                 In CSS, you can set a background image for an
                                 element using the background-image property.
                             </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/background-image.jpg"
-                                alt="The instance of how can we fill our background with an image">
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/background-image.jpg"
+                                    alt="The instance of how can we fill our background with an image">
+                            </div>
                         </section>
-                        <section class="infsection shortbox">
-                            <h4 class="infheadings">Font Family</h4>
-                            <br>
+                        <section class="infsection gridcontainer shortbox">
+                            <h4 class="infheadings gridheading">Font Family</h4>
                             <p class="inline-block infp">
                                 In Cascading Style Sheets (CSS), you can specify
                                 font families for text using the font-family
@@ -438,332 +532,404 @@
                                 define a prioritized list of font family names
                                 and/or generic family names for an element.
                             </p>
-                            <img class="narrow-img inline-block"
-                                src="./Resources/Images/font-family.jpg"
-                                alt="The example of using the font-family property">
+                            <div class="imgcontainer"> <img
+                                    class="narrow-img inline-block"
+                                    src="./Resources/Images/font-family.jpg"
+                                    alt="The example of using the font-family property">
+                            </div>
                         </section>
                     </section>
                     <hr>
                     <section>
                         <h3 class="headings" id="boxmodel">The Box Model</h3>
                         <section class="infsection stylet">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Topic</th>
-                                        <th>Description</th>
-                                        <th>Example</th>
-                                        <th>Applicable Properties</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1. box-sizing property</td>
-                                        <td>Defines how the total width and
-                                            height of an element is calculated,
-                                            including padding and border.
-                                            Default value is content-box.</td>
-                                        <td>box-sizing: content-box;</td>
-                                        <td>box-sizing</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. box-sizing: border-box;</td>
-                                        <td>A value for box-sizing that
-                                            includes padding and border in the
-                                            element's total width and height.
-                                            Useful for easier sizing
-                                            calculations.</td>
-                                        <td>box-sizing: border-box;</td>
-                                        <td>`box-sizing`</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. CSS Margin Collapse</td>
-                                        <td>When vertical margins of adjacent
-                                            block-level elements collapse,
-                                            resulting in a margin equal to the
-                                            larger of the two adjacent margins.</td>
-                                        <td>.block-one {
-                                            margin: 5px;
-                                            }
-                                            .block-two {
-                                            margin: 15px;
-                                            }</td>
-                                        <td>Margin properties</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. CSS auto keyword</td>
-                                        <td>A value used in various properties
-                                            (e.g., margin, width) to
-                                            automatically calculate a property's
-                                            value based on the context or
-                                            content.</td>
-                                        <td>margin: 0 auto;</td>
-                                        <td>Various</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. Dealing with overflow</td>
-                                        <td>How CSS handles content that
-                                            overflows the box dimensions.
-                                            Options include visible (default),
-                                            hidden, scroll, and auto.</td>
-                                        <td><code>overflow: hidden;</code></td>
-                                        <td>overflow</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. Height and Width
-                                            Maximums/Minimums</td>
-                                        <td>CSS properties (max-height,
-                                            min-height, max-width,
-                                            min-width) that set limits on the
-                                            size of an element, ensuring it
-                                            doesn't exceed or fall below
-                                            specified dimensions.</td>
-                                        <td>max-width: 500px;</td>
-                                        <td>max-height, min-height,
-                                            max-width, min-width</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7. The visibility Property</td>
-                                        <td>Determines whether an element is
-                                            visible (visible) or hidden
-                                            (hidden). Unlike display: none;,
-                                            the element still takes up space in
-                                            the layout when visibility:
-                                            hidden;.</td>
-                                        <td>visibility: hidden;</td>
-                                        <td>visibility</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="overflow">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Topic</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                            <th>Applicable Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. box-sizing property</td>
+                                            <td>Defines how the total width and
+                                                height of an element is
+                                                calculated,
+                                                including padding and border.
+                                                Default value is
+                                                content-box.</td>
+                                            <td>box-sizing: content-box;</td>
+                                            <td>box-sizing</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. box-sizing: border-box;</td>
+                                            <td>A value for box-sizing that
+                                                includes padding and border in
+                                                the
+                                                element's total width and
+                                                height.
+                                                Useful for easier sizing
+                                                calculations.</td>
+                                            <td>box-sizing: border-box;</td>
+                                            <td>`box-sizing`</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. CSS Margin Collapse</td>
+                                            <td>When vertical margins of
+                                                adjacent
+                                                block-level elements collapse,
+                                                resulting in a margin equal to
+                                                the
+                                                larger of the two adjacent
+                                                margins.</td>
+                                            <td>.block-one {
+                                                margin: 5px;
+                                                }
+                                                .block-two {
+                                                margin: 15px;
+                                                }</td>
+                                            <td>Margin properties</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. CSS auto keyword</td>
+                                            <td>A value used in various
+                                                properties
+                                                (e.g., margin, width) to
+                                                automatically calculate a
+                                                property's
+                                                value based on the context or
+                                                content.</td>
+                                            <td>margin: 0 auto;</td>
+                                            <td>Various</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. Dealing with overflow</td>
+                                            <td>How CSS handles content that
+                                                overflows the box dimensions.
+                                                Options include visible
+                                                (default),
+                                                hidden, scroll, and auto.</td>
+                                            <td><code>overflow:
+                                                    hidden;</code></td>
+                                            <td>overflow</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. Height and Width
+                                                Maximums/Minimums</td>
+                                            <td>CSS properties (max-height,
+                                                min-height, max-width,
+                                                min-width) that set limits on
+                                                the
+                                                size of an element, ensuring it
+                                                doesn't exceed or fall below
+                                                specified dimensions.</td>
+                                            <td>max-width: 500px;</td>
+                                            <td>max-height, min-height,
+                                                max-width, min-width</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. The visibility Property</td>
+                                            <td>Determines whether an element is
+                                                visible (visible) or hidden
+                                                (hidden). Unlike display: none;,
+                                                the element still takes up space
+                                                in
+                                                the layout when visibility:
+                                                hidden;.</td>
+                                            <td>visibility: hidden;</td>
+                                            <td>visibility</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                     </section>
                     <hr>
                     <section>
-                        <h3 class="headings" id="dis">Display and Positioning</h3>
+                        <h3 class="headings" id="dis">Display and
+                            Positioning</h3>
                         <section class="infsection stylet">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Topic</th>
-                                        <th>Description</th>
-                                        <th>Example</th>
-                                        <th>Applicable Properties</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1. CSS z-index property</td>
-                                        <td>Specifies the stack order of an
-                                            element. Elements with higher
-                                            z-index values are displayed in
-                                            front of elements with lower values.</td>
-                                        <td>z-index: 1;</td>
-                                        <td>z-index</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. Fixed CSS Positioning</td>
-                                        <td>Positions an element relative to the
-                                            browser window, so it stays fixed
-                                            even when scrolling.</td>
-                                        <td>position: fixed;</td>
-                                        <td>position</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. CSS display property</td>
-                                        <td>Specifies how an element should be
-                                            displayed. Common values include
-                                            block, inline, flex, and more.</td>
-                                        <td>display: flex;</td>
-                                        <td>display</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. CSS position: absolute;</td>
-                                        <td>Positions an element relative to its
-                                            closest positioned ancestor instead
-                                            of positioned relative to the
-                                            viewport, like fixed..</td>
-                                        <td>position: absolute;</td>
-                                        <td>position</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. CSS position: relative;</td>
-                                        <td>Makes an element positioned relative
-                                            to its normal position in the
-                                            document flow, without changing the
-                                            layout.</td>
-                                        <td>position: relative;</td>
-                                        <td>position</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. CSS float property</td>
-                                        <td>Specifies whether an element should
-                                            be placed to the left or right of
-                                            its container, allowing text and
-                                            inline elements to wrap around it.</td>
-                                        <td>float: left;</td>
-                                        <td>float</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7. The CSS clear property</td>
-                                        <td>Specifies which sides of an element
-                                            can have floating elements. It
-                                            prevents elements from wrapping
-                                            around a floated element.</td>
-                                        <td>clear: both;</td>
-                                        <td>clear</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="overflow">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Topic</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                            <th>Applicable Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. CSS z-index property</td>
+                                            <td>Specifies the stack order of an
+                                                element. Elements with higher
+                                                z-index values are displayed in
+                                                front of elements with lower
+                                                values.</td>
+                                            <td>z-index: 1;</td>
+                                            <td>z-index</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. Fixed CSS Positioning</td>
+                                            <td>Positions an element relative to
+                                                the
+                                                browser window, so it stays
+                                                fixed
+                                                even when scrolling.</td>
+                                            <td>position: fixed;</td>
+                                            <td>position</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. CSS display property</td>
+                                            <td>Specifies how an element should
+                                                be
+                                                displayed. Common values include
+                                                block, inline, flex, and
+                                                more.</td>
+                                            <td>display: flex;</td>
+                                            <td>display</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. CSS position: absolute;</td>
+                                            <td>Positions an element relative to
+                                                its
+                                                closest positioned ancestor
+                                                instead
+                                                of positioned relative to the
+                                                viewport, like fixed..</td>
+                                            <td>position: absolute;</td>
+                                            <td>position</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. CSS position: relative;</td>
+                                            <td>Makes an element positioned
+                                                relative
+                                                to its normal position in the
+                                                document flow, without changing
+                                                the
+                                                layout.</td>
+                                            <td>position: relative;</td>
+                                            <td>position</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. CSS float property</td>
+                                            <td>Specifies whether an element
+                                                should
+                                                be placed to the left or right
+                                                of
+                                                its container, allowing text and
+                                                inline elements to wrap around
+                                                it.</td>
+                                            <td>float: left;</td>
+                                            <td>float</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. The CSS clear property</td>
+                                            <td>Specifies which sides of an
+                                                element
+                                                can have floating elements. It
+                                                prevents elements from wrapping
+                                                around a floated element.</td>
+                                            <td>clear: both;</td>
+                                            <td>clear</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                     </section>
                     <hr>
                     <section>
                         <h3 class="headings" id="col">Colors</h3>
                         <section class="infsection stylet">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Topic</th>
-                                        <th>Description</th>
-                                        <th>Example</th>
-                                        <th>Applicable Properties</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1. CSS Color Alpha Values</td>
-                                        <td>Defines the level of transparency
-                                            for a color using the RGBA color
-                                            model. The alpha value ranges from 0
-                                            (completely transparent) to 1
-                                            (completely opaque).</td>
-                                        <td>rgba(255, 0, 0, 0.5);</td>
-                                        <td>color</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. CSS Hexadecimal Colors</td>
-                                        <td>Specifies colors using a hexadecimal
-                                            notation. The format includes three
-                                            pairs of hex digits representing the
-                                            intensities of red, green, and blue
-                                            components.</td>
-                                        <td>#00ff00;</td>
-                                        <td>color</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. CSS HSL Colors</td>
-                                        <td>Describes colors using the
-                                            Hue-Saturation-Lightness model.
-                                            Allows more intuitive color
-                                            selection by specifying the hue,
-                                            saturation, and lightness.</td>
-                                        <td>hsl(120, 100%, 50%);</td>
-                                        <td>color</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. CSS rgb() Colors</td>
-                                        <td>Specifies colors using the
-                                            Red-Green-Blue color model. The
-                                            values range from 0 to 255 for each
-                                            color component.</td>
-                                        <td>rgb(255, 0, 0);</td>
-                                        <td>color</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. Color Name Keywords</td>
-                                        <td>Uses predefined color names such as
-                                            "red," "blue," etc. Limited set of
-                                            named colors available in CSS.</td>
-                                        <td>color: red;</td>
-                                        <td>color</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="overflow">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Topic</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                            <th>Applicable Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. CSS Color Alpha Values</td>
+                                            <td>Defines the level of
+                                                transparency
+                                                for a color using the RGBA color
+                                                model. The alpha value ranges
+                                                from 0
+                                                (completely transparent) to 1
+                                                (completely opaque).</td>
+                                            <td>rgba(255, 0, 0, 0.5);</td>
+                                            <td>color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. CSS Hexadecimal Colors</td>
+                                            <td>Specifies colors using a
+                                                hexadecimal
+                                                notation. The format includes
+                                                three
+                                                pairs of hex digits representing
+                                                the
+                                                intensities of red, green, and
+                                                blue
+                                                components.</td>
+                                            <td>#00ff00;</td>
+                                            <td>color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. CSS HSL Colors</td>
+                                            <td>Describes colors using the
+                                                Hue-Saturation-Lightness model.
+                                                Allows more intuitive color
+                                                selection by specifying the hue,
+                                                saturation, and lightness.</td>
+                                            <td>hsl(120, 100%, 50%);</td>
+                                            <td>color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. CSS rgb() Colors</td>
+                                            <td>Specifies colors using the
+                                                Red-Green-Blue color model. The
+                                                values range from 0 to 255 for
+                                                each
+                                                color component.</td>
+                                            <td>rgb(255, 0, 0);</td>
+                                            <td>color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. Color Name Keywords</td>
+                                            <td>Uses predefined color names such
+                                                as
+                                                "red," "blue," etc. Limited set
+                                                of
+                                                named colors available in
+                                                CSS.</td>
+                                            <td>color: red;</td>
+                                            <td>color</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                     </section>
                     <hr>
                     <section>
-                        <h3 class="headings monospaceitalic" id="typo">Typography</h3>
+                        <h3 class="headings monospaceitalic"
+                            id="typo">Typography</h3>
                         <section class="infsection stylet">
-                            <table style="margin-bottom: 15px;">
-                                <thead>
-                                    <tr class="monospacebold">
-                                        <th>Topic</th>
-                                        <th>Description</th>
-                                        <th>Example</th>
-                                        <th>Applicable Properties</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="VT323"
-                                    style="font-style: normal; font-size: medium;">
-                                    <tr>
-                                        <td>1. CSS `font-weight` Property</td>
-                                        <td>Sets the thickness of the font
-                                            characters. Common values include
-                                            normal, bold, bolder, lighter, or
-                                            numeric values from 100 to 900.</td>
-                                        <td>font-weight: bold;</td>
-                                        <td>font-weight</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. CSS `font-style` Property</td>
-                                        <td>Determines the font style of the
-                                            text. Values can be normal, italic,
-                                            or oblique.</td>
-                                        <td>font-style: italic;</td>
-                                        <td>font-style</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. CSS `@font-face` Rule</td>
-                                        <td>Allows the definition of custom
-                                            fonts and their sources. Useful for
-                                            using non-standard or web fonts.</td>
-                                        <td>@font-face { font-family:
-                                            'CustomFont'; src: url('custom-font.woff2')
-                                            format(); <br>}</td>
-                                        <td>@font-face</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. CSS Fallback Fonts</td>
-                                        <td>Specifies a list of font family
-                                            names and/or generic family names to
-                                            be used as a fallback in case the
-                                            preferred font is not available.</td>
-                                        <td>font-family: 'PreferredFont', Arial,
-                                            sans-serif;</td>
-                                        <td>font-family</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. The CSS `line-height` Property</td>
-                                        <td>Sets the height of a line of text.
-                                            It can be a number, a percentage, or
-                                            a length value.</td>
-                                        <td>line-height: 1.5;</td>
-                                        <td>line-height</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. CSS Linking Fonts</td>
-                                        <td>Refers to the process of including
-                                            external font files in a web page
-                                            using various methods such as
-                                            @font-face or linking to web font
-                                            services.</td>
-                                        <td>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
-                                            &lt;link rel="preconnect" href="https://fonts.gstatic.com"
-                                            crossorigin&gt;
-                                            &lt;link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
-                                            rel="stylesheet"&gt;</td>
-                                        <td>&lt;link rel="preconnect" href=""&gt;
-                                            &lt;link href=""
-                                            rel="stylesheet"&gt;</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="overflow">
+                                <table style="margin-bottom: 15px;">
+                                    <thead>
+                                        <tr class="monospacebold">
+                                            <th>Topic</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                            <th>Applicable Properties</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="VT323"
+                                        style="font-style: normal; font-size: medium;">
+                                        <tr>
+                                            <td>1. CSS `font-weight`
+                                                Property</td>
+                                            <td>Sets the thickness of the font
+                                                characters. Common values
+                                                include
+                                                normal, bold, bolder, lighter,
+                                                or
+                                                numeric values from 100 to
+                                                900.</td>
+                                            <td>font-weight: bold;</td>
+                                            <td>font-weight</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. CSS `font-style`
+                                                Property</td>
+                                            <td>Determines the font style of the
+                                                text. Values can be normal,
+                                                italic,
+                                                or oblique.</td>
+                                            <td>font-style: italic;</td>
+                                            <td>font-style</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. CSS `@font-face` Rule</td>
+                                            <td>Allows the definition of custom
+                                                fonts and their sources. Useful
+                                                for
+                                                using non-standard or web
+                                                fonts.</td>
+                                            <td>@font-face { font-family:
+                                                'CustomFont'; src:
+                                                url('custom-font.woff2')
+                                                format(); <br>}</td>
+                                            <td>@font-face</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. CSS Fallback Fonts</td>
+                                            <td>Specifies a list of font family
+                                                names and/or generic family
+                                                names to
+                                                be used as a fallback in case
+                                                the
+                                                preferred font is not
+                                                available.</td>
+                                            <td>font-family: 'PreferredFont',
+                                                Arial,
+                                                sans-serif;</td>
+                                            <td>font-family</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. The CSS `line-height`
+                                                Property</td>
+                                            <td>Sets the height of a line of
+                                                text.
+                                                It can be a number, a
+                                                percentage, or
+                                                a length value.</td>
+                                            <td>line-height: 1.5;</td>
+                                            <td>line-height</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. CSS Linking Fonts</td>
+                                            <td>Refers to the process of
+                                                including
+                                                external font files in a web
+                                                page
+                                                using various methods such as
+                                                @font-face or linking to web
+                                                font
+                                                services.</td>
+                                            <td>&lt;link rel="preconnect"
+                                                href="https://fonts.googleapis.com"&gt;
+                                                &lt;link rel="preconnect"
+                                                href="https://fonts.gstatic.com"
+                                                crossorigin&gt;
+                                                &lt;link
+                                                href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+                                                rel="stylesheet"&gt;</td>
+                                            <td>&lt;link rel="preconnect"
+                                                href=""&gt;
+                                                &lt;link href=""
+                                                rel="stylesheet"&gt;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                     </section>
                 </section>
                 <aside>
-                    <img id="dog" title="Woof-woof" src="./Resources/Images/dog.jpg"
+                    <img id="dog" title="Woof-woof"
+                        src="./Resources/Images/dog.jpg"
                         alt="The picture of a lovely dog">
                     <a id="back" href="#">Back to top</a>
                 </aside>
