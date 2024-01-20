@@ -500,7 +500,7 @@ ol.specindent {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
     
     #backbutton {
         display: none;
