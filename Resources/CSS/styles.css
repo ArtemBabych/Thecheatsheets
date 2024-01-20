@@ -415,9 +415,9 @@ ol.specindent {
 
 /*Style for a dog*/
 #dog {
-    top: 10732px;
+    top: 13528px;
     right: 0px;
-    left: 1136px;
+    left: 1344px;
     width: 400px;
     height: 305px;
     transform: rotate(40deg);
@@ -592,6 +592,6 @@ ol.specindent {
         font-size: 0.8rem;
         padding: 0 1% 0 0;
         margin: 0;
-        width: 5.5rem;
+        width: 5.7rem;
     }
 }
