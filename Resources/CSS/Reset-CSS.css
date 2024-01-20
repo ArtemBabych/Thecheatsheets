@@ -1,11 +1,21 @@
-/* Simplified CSS Reset */
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, strong, b, i, u, small, code, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
-  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1rem;
 }
 
 body {
