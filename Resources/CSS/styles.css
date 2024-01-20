@@ -262,11 +262,11 @@ ol.specindent {
 .gridheading {
     grid-column: 1/span 2;
 }
+
 .imgcontainer {
-    height: 65%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    justify-self: center;
 }
 
 .img {
@@ -278,14 +278,8 @@ ol.specindent {
 }
 
 .narrow-img {
-    /*an old version
-    vertical-align: top;
-    width: 430px;
-    height: 130px;
-    position: relative;
-    padding-left: 100px;
-    */
     border-radius: 3px;
+    width: 100%;
 }
 
 .headings {
@@ -297,24 +291,26 @@ ol.specindent {
 }
 
 .infsection {
-    margin: 0 auto;
-    width: 1000px;
+    margin: 0 auto 5%;
+    width: 100%;
+    height: max-content;
+    gap: 0.5rem;
 }
 
 .infheadings {
     padding-top: 1rem;
-    font-size: 20px;
+    font-size: 1.45rem;
     margin-bottom: 0.5rem;
 }
 
 .shortbox {
-    height: 200px;
+    height: auto;
 }
 
 .infp {
-    width: 400px;
-    height: 300px;
-    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
 }
 
 .th {
@@ -407,6 +403,9 @@ ol.specindent {
     color: #6f3c3c;
 }
 
+.overflow {
+    overflow: scroll;
+}
 #backbutton {
     display: inline-block;
     order: 3;
@@ -422,6 +421,10 @@ ol.specindent {
     transform: rotate(40deg);
     position: absolute;
     z-index: -2;
+}
+
+@media only screen and (max-width: 875px) {
+    
 }
 
 @media only screen and (max-width: 700px) {
