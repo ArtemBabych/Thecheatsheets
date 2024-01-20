@@ -590,7 +590,7 @@ ol.specindent {
 
     .sticky-menu {
         font-size: 0.8rem;
-        padding: 0;
+        padding: 0 1% 0 0;
         margin: 0;
         width: 5.5rem;
     }
